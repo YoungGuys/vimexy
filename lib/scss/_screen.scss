@@ -1,0 +1,26 @@
+
+
+.menu {
+    width: 180% * 100 / 1154;
+    float: left;
+    border-left: 1px solid $c-grey;
+    border-right: 1px solid $c-grey;
+}
+    .menu__item {
+        display: block;
+        padding: 0 8px;
+        color: $c-grey;
+        border-top: 1px solid $c-grey;
+    }
+
+
+
+
+.history {
+    margin-top: 60px;
+}
+
+.history__title {
+    margin-bottom: 12px;
+    text-align: center;
+}
