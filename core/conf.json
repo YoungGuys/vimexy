@@ -1,0 +1,37 @@
+{
+  "country1": {
+    "fields": {
+      "name": [
+        "text","Введіть назву країни"
+      ],
+      "image": [
+        "image","Оберіть картинку для країни"
+      ],
+      "image2": [
+        "resize_image","Оберіть картинку",320,480
+      ],
+      "selectedField": [
+        "select","Оберіть щось з списку",[
+          "First",
+          "second",
+          "third",
+          "another"
+        ]
+      ],
+      "check": [
+        "checkbox","Включити чи виключити?"
+      ]
+    },
+    "settings": {"pk": "id_country"}
+  },
+  "country" : {
+    "fields": {
+      "name" : [
+        "text","Введіть назву країни"
+      ],
+      "image": [
+        "image", "Оберіть картинку для країни"
+      ]
+    }
+  }
+}
