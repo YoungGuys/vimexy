@@ -110,11 +110,11 @@ h3{
     background-color: rgba(#fff, 0.8);
     border: 1px solid lightgrey;
     padding-left: 10px;
+    margin: 3px 0 15px;
 }
-.registration__input--select {
-    @include input-placeholder {
-        color: #fff;
-    }
+
+option {
+        color: $c-grey;
 }
 
 // LEFT DIV
@@ -124,7 +124,7 @@ h3{
     height: 100%;
     width: 50%;
     float: left;
-    margin-bottom: 3%;
+    margin-bottom: 1%;
 }
 
 .registration__item {
@@ -148,17 +148,41 @@ h3{
 .registration__bottom {
     clear: both;
     text-align: center;
-    margin: 4% 0 2% 0;
+    margin: 2% 0 2% 0;
 }
 
-.btn--blue {
+.btn--blue--regist {
+
     margin: 1% auto;
+    background-color: $c-blue !important;
+    color: #fff;
+    padding: 5px;
+}
+
+.btn {
+    background: none;
+    border: none;
+}
+.btn:active,
+.btn:focus {
+    outline: none;
+}
+
+select option[default] {
+    color: $c-grey;
 }
 
 
+/* Чтобы показывало надпись о пароле, нужно добавить к классу .password__incorrect
+модификатор &--active */
 
-
-
+.password__incorrect {
+    color: $c-red;
+    text-align: center;
+    &--active {
+        display: block;
+    }
+}
 
 /*--------------------------------\
          #FOOTER SECTION

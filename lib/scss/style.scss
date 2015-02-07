@@ -7,11 +7,16 @@
 @import "base";
 @import "grids";
 
+@import "screen";
+
 @import "page/header";
 @import "page/footer";
 @import "page/sidebar";
 @import "page/register";
 
-@import "screen";
+
+@import "page/profile";
+@import "page/events";
+
 
 @import "modal";

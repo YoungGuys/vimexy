@@ -1,8 +1,9 @@
 $c-blue: #76baeb;
-$c-red: #d3887d;
+$c-red: #EE7565;
 $c-grey: #7f7d7c;
 $c-grey-title: #AFAEAE;
 $c-grey-text: #969594;
+$c-green: #8BB868;
 //979695
 //595652
 
@@ -20,7 +21,7 @@ html,
 body {
     height: 100%;
 //    @include debug-vertical-alignment;
-    //@include adjust-font-size-to
+//    @include adjust-font-size-to
     font-family: 'Open Sans', Verdana, Tahoma, Arial, sans-serif;
 }
 

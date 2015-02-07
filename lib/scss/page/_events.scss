@@ -1,0 +1,210 @@
+
+.page__filter {
+    line-height: 36px;
+    padding: 0 38% * 100 / $widthPage 0 17% * 100 / $widthPage;
+}
+
+.page__filter__item {
+    width: 125% * 100 / $widthPage;
+    display: inline-block;
+    margin-right: 30% * 100 / $widthPage;
+}
+
+.page__filter__item__select {
+    width: 100%;
+}
+
+.page__filter__item--search {
+    width: 220% * 100 / 898;
+    float: right;
+}
+
+
+.page__events__item {
+    @extend .clearfix;
+    padding: 15px 38% * 100 / $widthPage 15px 17% * 100 / $widthPage;
+    border-top: 1px solid $c-grey;
+}
+
+.page__events__item__pic {
+    width: 230% * 100 / 898 ;
+    float: left;
+    margin-right: 20% * 100 / 898;
+}
+
+.page__events__item__pic__img {
+    width: 100%;
+}
+
+.page__events__item__info {
+    width: 430% * 100 / 898;
+    float: left;
+}
+
+.page__events__item__info__title {
+    margin-bottom: 10px;
+    color: $c-grey-title;
+    font-size: 18px;
+}
+
+.page__events__item__info__text {
+    margin-bottom: 12px;
+    color: $c-grey-text;
+}
+
+.page__events__item__info__filter {
+
+}
+
+.page__events__item__info__filter__title {
+    margin: 35px 0 10px;
+    font-size: 20px;
+}
+
+.page__events__item__info__filter__item {
+    width: 55px;
+    height: 55px;
+    display: inline-block;
+    margin-right: 10px;
+    border: 1px solid #969594;
+    border-radius: 100%;
+}
+
+.page__events__item__info__organizator {
+    width: 220% * 100 / 898;
+    color: $c-grey-text;
+    float: left;
+}
+
+.page__events__item__info__organizator__link {
+
+}
+
+.page__events__item__meta {
+    float: right;
+    line-height: 15px;
+    font-size: 13px;
+}
+
+.page__events__item__meta__date {
+
+}
+
+.page__events__item__meta__adress {
+    margin: 10px 0;
+}
+
+.page__events__item__meta__user {
+    margin-bottom: 10px;
+
+}
+
+
+
+.event__header {
+    @extend .clearfix;
+    margin-bottom: 15px;
+    padding: 0 38% * 100 / $widthPage 0 17% * 100 / $widthPage;
+    line-height: 36px;
+    border-bottom: 1px solid #7f7d7c;
+}
+
+.event__header__title {
+    float: left;
+    font-size: 22px;
+}
+
+.event__header__users {
+    float: right;
+}
+
+.event__col-1 {
+    width: 585% * 100 / $widthPage;
+    padding: 0 38% * 100 / $widthPage 0 17% * 100 / $widthPage;
+    box-sizing: border-box;
+    float: left;
+}
+
+.event__col-2 {
+    width: ($widthPage - 585%) * 100 / $widthPage;
+    float: left;
+}
+
+.event__pic {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.event__btn_add {
+    float: right;
+}
+
+
+.event__descr__title {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.event__descr__text {
+    font-size: 14px;
+}
+
+
+.event__gop {
+    position: relative;
+    height: 235px;
+    margin-bottom: 15px;
+}
+
+.event__geo__map {
+    margin-bottom: 5px;
+}
+
+.event__date {
+    margin-bottom: 20px;
+}
+
+
+.event__contact__img {
+    width: 135px;
+    margin-right: 5px;
+}
+
+
+
+.event__date {
+    margin-bottom: 10px;
+}
+
+.event__date__title {
+    font-size: 20px;
+}
+
+.event__date__calendar {
+    margin-right: 10px;
+    float: left;
+}
+
+.event__date__info {
+    overflow: hidden;
+}
+
+
+
+
+
+.event__contact__title {
+    font-size: 20px;
+}
+
+.event__contact__img {
+    margin-right: 5px;
+    float: left;
+}
+
+.event__contact__info {
+    overflow: hidden;
+}
+
+//.event__contact__link-avtor {
+//    color: $c-blue;
+//}
