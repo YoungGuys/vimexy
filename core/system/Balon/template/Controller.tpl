@@ -13,8 +13,8 @@ class {{name}} extends System\Controller{
 
     function __construct()
     {
-        $this->model = new \Model\Main();
-        $this->view = new \View\Main();
+        $this->model = new \Model\{{name}}();
+        $this->view = new \View\{{name}}();
         // TODO: Implement __construct() method.
     }
 
