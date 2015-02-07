@@ -121,7 +121,6 @@
                   <input type="submit" class="btn btn--blue" />
                   <input type="reset" class="btn"/>
                 </div>
-
             </form>
         </div>
     </section>
