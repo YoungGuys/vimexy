@@ -38,41 +38,46 @@ ADMIN
          -o-transition: all .5s ease;
             transition: all .5s ease;
 }
-.control_block:hover {
-    background-color:rgba(180, 180, 180, 0.8);
-}
-.control_block.left {
-	left: 2px;
-	right: auto !important;
-}
-.control_block.right {
-    right: 2px;
-    left: auto !important;
-}
-.control_block [class^=icon-],
-.control_block [class*=icon-] {
-	width: 14px;
-	height: 14px;
-	display: inline-block;
-    margin: 0!important;
-	padding: 3px 3px 1px 2px!important;
-	line-height: normal!important;
-	vertical-align: middle;
-	text-decoration: none!important;
-	font-style: normal!important;
-	text-align: center!important;
-	font: 12px awesome !important;
-	cursor: pointer;
-    background: transparent !important;
-	border: 1px solid transparent;
-    -webkit-border-radius: 100%;
-       -moz-border-radius: 100%;
-            border-radius: 100%;
-}
-.control_block [class^=icon-]:hover,
-.control_block [class*=icon-]:hover {
-    border: 1px solid #4e3a32;
-}
+
+	.control_block:hover {
+	    background-color:rgba(180, 180, 180, 0.8);
+	}
+
+	.control_block.left {
+		left: 2px;
+		right: auto !important;
+	}
+
+	.control_block.right {
+	    right: 2px;
+	    left: auto !important;
+	}
+
+	.control_block [class^=icon-],
+	.control_block [class*=icon-] {
+		width: 14px;
+		height: 14px;
+		display: inline-block;
+	    margin: 0!important;
+		padding: 3px 3px 1px 2px!important;
+		line-height: normal!important;
+		vertical-align: middle;
+		text-decoration: none!important;
+		font-style: normal!important;
+		text-align: center!important;
+		font: 12px awesome !important;
+		cursor: pointer;
+	    background: transparent !important;
+		border: 1px solid transparent;
+	    -webkit-border-radius: 100%;
+	       -moz-border-radius: 100%;
+	            border-radius: 100%;
+	}
+
+	.control_block [class^=icon-]:hover,
+	.control_block [class*=icon-]:hover {
+	    border: 1px solid #4e3a32;
+	}
 
 
 .icon-eye-open:before 	{	content: "\f06e"; }
@@ -90,9 +95,15 @@ ADMIN
 .p-abs { position: absolute; }
 .p-fix { position: fixed; }
 
-
-/*.page_article__article__text .control_block {
-    right: -50px;
+.is-no_active {
+	opacity: 0.4;
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
 }
-*/
+	.is-no_active:hover {
+		opacity: 1;
+	}
 
