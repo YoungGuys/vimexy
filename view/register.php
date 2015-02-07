@@ -3,21 +3,25 @@
 
     <!-- SECTION HEADER -->
 
-    <section class="header">
+    <section class="register__header">
         <header>
             <div class="header__login">
 
-                <!-- Link to landing page -->
 
-                <a href="" class="header__landing-link"><p>Більше про нас</p></a>
+
+
 
                 <!-- Form itself -->
 
                 <form class="header__login">
 
-                    <input class="header__login__email" type="email" placeholder="e-mail"/>
+                    <a href="" class="header__landing-link">Більше про нас</a>
+                    
+                    <!-- Link to landing page -->
 
-                    <input class="header__login__password" type="password" placeholder="пароль"/>
+                    <input class="header__login__email" type="email" placeholder="  e-mail"/>
+
+                    <input class="header__login__password" type="password" placeholder="  пароль"/>
 
                     <input type="submit"  class="header__login__submit" value="Увійти"/>
 
@@ -42,76 +46,80 @@
             <!-- REGISTRATION FORM -->
 
             <form class="registration__form">
-                <p class="registration__item">
+                <div class="registration__form--left">
+                    <p class="registration__item">
 
-                    <label for="name">Ім'я</label>
+                        <label for="name">Ім'я</label>
 
-                    <input class="registration__input" name="name" type="text" placeholder="Тарас">
-                </p>
+                        <input class="registration__input" name="name" type="text" placeholder="Тарас">
+                    </p>
 
-                <p class="registration__item">
-                    <label for="password">Прізвище</label>
+                    <p class="registration__item">
+                        <label for="password">Прізвище</label>
 
-                    <input type="password" class="registation__input" name="password" placeholder="бажано 8 символів"/>
-                </p>
+                        <input type="password" class="registation__input" name="password" placeholder="бажано 8 символів"/>
+                    </p>
 
-                <!-- DATE MONTH YEAR
+                    <!-- DATE MONTH YEAR
 
-                identify class???
-                -->
+                    identify class???
+                    -->
 
-                <p class="registration__item">
-                    <label for="email">e-mail</label>
+                    <p class="registration__item">
+                        <label for="email">e-mail</label>
 
-                    <input type="email" class="registration__input" name="email"/>
-                </p>
+                        <input type="email" class="registration__input" name="email"/>
+                    </p>
 
-                <p class="registration__item">
-                    <label>Дата народження</label>
+                    <p class="registration__item">
+                        <label>Дата народження</label>
 
-                    <select name="day">
-                        <option value="8">8</option>
-                    </select>
+                        <select name="day">
+                            <option value="8">8</option>
+                        </select>
 
-                    <select name="month">
-                        <option value="лютий">лютий</option>
-                    </select>
+                        <select name="month">
+                            <option value="лютий">лютий</option>
+                        </select>
 
-                    <select name="year">
-                        <option value="1994">1994</option>
-                    </select>
-                </p>
+                        <select name="year">
+                            <option value="1994">1994</option>
+                        </select>
+                    </p>
 
-                <p class="registration__item">
-                    <label for="city">Місто</label>
+                    <p class="registration__item">
+                        <label for="city">Місто</label>
 
-                    <input type="text" class="registration__input" name="city" placeholder="Моринці"/>
-                </p>
+                        <input type="text" class="registration__input" name="city" placeholder="Моринці"/>
+                    </p>
+                </div>
 
-                <p class="registration__item">
-                    <label for="lastname">Прізвище</label>
+                <div class="registration__form--right">
+                    <p class="registration__item">
+                        <label for="lastname">Прізвище</label>
 
-                    <input type="text" class="registration__input"/>
-                </p>
+                        <input type="text" class="registration__input"/>
+                    </p>
 
-                <p class="registration__item">
-                    <label for="confirm">Прізвище</label>
+                    <p class="registration__item">
+                        <label for="confirm">Прізвище</label>
 
-                    <input type="password" class="registation__input" name="confirm" placeholder="бажано 8 символів"/>
-                </p>
+                        <input type="password" class="registation__input" name="confirm" placeholder="бажано 8 символів"/>
+                    </p>
 
-                <p class="registration_item">
-                    <label>Стать</label>
+                    <p class="registration_item">
+                        <label>Стать</label>
 
-                    <input type="radio" name="sex" value="Чоловіча"/>
-                    <input type="radio" name="sex" value="Жіноча"/>
-                </p>
+                        <input type="radio" name="sex" value="Чоловіча"/>
+                        <input type="radio" name="sex" value="Жіноча"/>
+                    </p>
+                </div>
 
                 <!-- BOX BOTTOM -->
 
                 <div class="registration__bottom">
-                  <input type="submit" class="btn btn--blue" >
-                  <input type="reset" class="btn"
+                  <input type="submit" class="btn btn--blue" />
+                  <input type="reset" class="btn"/>
                 </div>
 
             </form>
