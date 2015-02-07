@@ -82,11 +82,19 @@ h3{
     padding: 3% 0 3% 0;
 }
 
+// FORM
+
 .registration__form{
     width: 100%;
     dicplay: inline-block;
-    height: 70%;
-    border: 1px solid black;
+    height: 80%;
+}
+.registration__form label {
+    display: block;
+}
+
+.labelsex {
+    display: inline !important;
 }
 
 // LEFT DIV
@@ -95,6 +103,11 @@ h3{
     height: 100%;
     width: 50%;
     float: left;
+    margin-bottom: 3%;
+}
+
+.registration__item {
+    margin-left: 15%;
 }
 
 
@@ -110,5 +123,10 @@ h3{
 
 .registration__bottom {
     clear: both;
+    text-align: center;
+    margin: 4% 0 2% 0;
 }
 
+.btn--blue {
+    margin: 1% auto;
+}

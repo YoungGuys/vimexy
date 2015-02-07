@@ -204,31 +204,53 @@ h3 {
   padding: 3% 0 3% 0;
 }
 
-/* line 85, ../scss/page/_register.scss */
+/* line 87, ../scss/page/_register.scss */
 .registration__form {
   width: 100%;
   dicplay: inline-block;
-  height: 70%;
-  border: 1px solid black;
+  height: 80%;
 }
 
-/* line 94, ../scss/page/_register.scss */
+/* line 92, ../scss/page/_register.scss */
+.registration__form label {
+  display: block;
+}
+
+/* line 96, ../scss/page/_register.scss */
+.labelsex {
+  display: inline !important;
+}
+
+/* line 102, ../scss/page/_register.scss */
 .registration__form--left {
   height: 100%;
   width: 50%;
   float: left;
+  margin-bottom: 3%;
 }
 
-/* line 103, ../scss/page/_register.scss */
+/* line 109, ../scss/page/_register.scss */
+.registration__item {
+  margin-left: 15%;
+}
+
+/* line 116, ../scss/page/_register.scss */
 .registration__form--right {
   height: 100%;
   width: 50%;
   float: right;
 }
 
-/* line 111, ../scss/page/_register.scss */
+/* line 124, ../scss/page/_register.scss */
 .registration__bottom {
   clear: both;
+  text-align: center;
+  margin: 4% 0 2% 0;
+}
+
+/* line 130, ../scss/page/_register.scss */
+.btn--blue {
+  margin: 1% auto;
 }
 
 /* line 3, ../scss/_screen.scss */
