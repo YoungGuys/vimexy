@@ -57,7 +57,7 @@
                     <p class="registration__item">
                         <label for="password">Пароль</label>
 
-                        <input type="password" class="registation__input" name="password" id="password"
+                        <input type="password" class="registration__input" name="password" id="password"
                                placeholder="бажано 8 символів"/>
                     </p>
 
@@ -75,15 +75,15 @@
                     <p class="registration__item">
                         <label>Дата народження</label>
 
-                        <select name="day">
+                        <select name="day" class="registration__input--select">
                             <option value="8">8</option>
                         </select>
 
-                        <select name="month">
-                            <option value="лютий">лютий</option>
+                        <select name="month" class="registration__input--select">
+                            <option value="02">02</option>
                         </select>
 
-                        <select name="year">
+                        <select name="year" class="registration__input--select">
                             <option value="1994">1994</option>
                         </select>
                     </p>
@@ -100,7 +100,7 @@
                     <p class="registration__item">
                         <label for="confirm">Перевірка паролю</label>
 
-                        <input type="password" class="registation__input" name="confirm" id="confirm" placeholder="бажано 8 символів"/>
+                        <input type="password" class="registration__input" name="confirm" id="confirm" placeholder="бажано 8 символів"/>
                     </p>
 
                     <p class="registration__item">
@@ -133,7 +133,7 @@
 
     <!-- BOTTOM SECTION -->
 
-    <section class="footer">
+    <section class="register__footer">
         <div class="footer__items">
             <p>&copy;Vimexy 2015</p>
             <a href=""><i class="i-fb"/></a>

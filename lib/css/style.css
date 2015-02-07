@@ -128,11 +128,15 @@ img {
 
 /* line 1, ../scss/page/_register.scss */
 .register__bg {
+  background-image: url(../pic/bg-register.jpg);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
   width: 100%;
   height: 100%;
 }
 
-/* line 8, ../scss/page/_register.scss */
+/* line 11, ../scss/page/_register.scss */
 body,
 html {
   height: 100%;
@@ -142,14 +146,14 @@ html {
 /*--------------------------------\
          #HEADER SECTION
 \--------------------------------*/
-/* line 23, ../scss/page/_register.scss */
+/* line 26, ../scss/page/_register.scss */
 .register__header {
   width: 100%;
   max-height: 40px;
   margin: 0 auto;
 }
 
-/* line 29, ../scss/page/_register.scss */
+/* line 32, ../scss/page/_register.scss */
 .header__login {
   height: 100%;
   width: 90%;
@@ -157,71 +161,118 @@ html {
   text-align: right;
 }
 
-/* line 36, ../scss/page/_register.scss */
+/* line 39, ../scss/page/_register.scss */
 .header__landing-link {
   width: 80%;
   margin-right: 2%;
 }
 
-/* line 41, ../scss/page/_register.scss */
+/* line 44, ../scss/page/_register.scss */
 .header__landing-link:hover {
   text-decoration: none;
 }
 
-/* line 45, ../scss/page/_register.scss */
+/* line 48, ../scss/page/_register.scss */
 .header__login__email,
 .header__login__password {
+  color: #fff;
   background: none;
   border: 1px solid white;
 }
+/* line 61, C:/Ruby187/lib/ruby/gems/1.8/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.header__login__email:-moz-placeholder,
+.header__login__password:-moz-placeholder {
+  color: #fff;
+}
+/* line 64, C:/Ruby187/lib/ruby/gems/1.8/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.header__login__email::-moz-placeholder,
+.header__login__password::-moz-placeholder {
+  color: #fff;
+}
+/* line 67, C:/Ruby187/lib/ruby/gems/1.8/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.header__login__email:-ms-input-placeholder,
+.header__login__password:-ms-input-placeholder {
+  color: #fff;
+}
+/* line 56, C:/Ruby187/lib/ruby/gems/1.8/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.header__login__email::-webkit-input-placeholder,
+.header__login__password::-webkit-input-placeholder {
+  color: #fff;
+}
 
-/* line 52, ../scss/page/_register.scss */
+/* line 58, ../scss/page/_register.scss */
 .header__login__submit {
   background: none;
   border: none;
+  color: white;
 }
 
 /*--------------------------------\
          #REGISTRATION SECTION
 \--------------------------------*/
-/* line 68, ../scss/page/_register.scss */
+/* line 75, ../scss/page/_register.scss */
 .registration {
   position: relative;
   top: 10%;
 }
 
-/* line 73, ../scss/page/_register.scss */
+/* line 80, ../scss/page/_register.scss */
 .registration__box {
   max-height: 440px;
   max-width: 550px;
-  background-color: rgba(198, 198, 198, 0.9);
+  background-color: rgba(255, 255, 255, 0.8);
   margin: 5% auto;
 }
 
-/* line 80, ../scss/page/_register.scss */
+/* line 87, ../scss/page/_register.scss */
 h3 {
   text-align: center;
   padding: 3% 0 3% 0;
 }
 
-/* line 87, ../scss/page/_register.scss */
+/* line 96, ../scss/page/_register.scss */
 .registration__form {
   width: 100%;
   dicplay: inline-block;
   height: 80%;
 }
 
-/* line 92, ../scss/page/_register.scss */
+/* line 101, ../scss/page/_register.scss */
 .registration__form label {
   display: block;
 }
 
-/* line 96, ../scss/page/_register.scss */
+/* line 105, ../scss/page/_register.scss */
 .labelsex {
   display: inline !important;
 }
 
-/* line 102, ../scss/page/_register.scss */
+/* line 108, ../scss/page/_register.scss */
+.registration__input,
+.registration__input--select {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid lightgrey;
+  padding-left: 10px;
+}
+
+/* line 61, C:/Ruby187/lib/ruby/gems/1.8/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.registration__input--select:-moz-placeholder {
+  color: #fff;
+}
+/* line 64, C:/Ruby187/lib/ruby/gems/1.8/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.registration__input--select::-moz-placeholder {
+  color: #fff;
+}
+/* line 67, C:/Ruby187/lib/ruby/gems/1.8/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.registration__input--select:-ms-input-placeholder {
+  color: #fff;
+}
+/* line 56, C:/Ruby187/lib/ruby/gems/1.8/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+.registration__input--select::-webkit-input-placeholder {
+  color: #fff;
+}
+
+/* line 123, ../scss/page/_register.scss */
 .registration__form--left {
   height: 100%;
   width: 50%;
@@ -229,28 +280,49 @@ h3 {
   margin-bottom: 3%;
 }
 
-/* line 109, ../scss/page/_register.scss */
+/* line 130, ../scss/page/_register.scss */
 .registration__item {
   margin-left: 15%;
 }
 
-/* line 116, ../scss/page/_register.scss */
+/* line 138, ../scss/page/_register.scss */
 .registration__form--right {
   height: 100%;
   width: 50%;
   float: right;
 }
 
-/* line 124, ../scss/page/_register.scss */
+/* line 148, ../scss/page/_register.scss */
 .registration__bottom {
   clear: both;
   text-align: center;
   margin: 4% 0 2% 0;
 }
 
-/* line 130, ../scss/page/_register.scss */
+/* line 154, ../scss/page/_register.scss */
 .btn--blue {
   margin: 1% auto;
+}
+
+/*--------------------------------\
+         #FOOTER SECTION
+\--------------------------------*/
+/* line 167, ../scss/page/_register.scss */
+.register__footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+/* line 173, ../scss/page/_register.scss */
+.footer__items {
+  width: 100%;
+}
+
+/* line 177, ../scss/page/_register.scss */
+.footer__items p {
+  margin: 0 2% 0 10%;
+  color: white;
 }
 
 /* line 3, ../scss/_screen.scss */
