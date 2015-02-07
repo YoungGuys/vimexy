@@ -124,7 +124,7 @@
 
                 <div class="registration__bottom">
                   <div class="password__incorrect password__incorrec--active"><p>Паролі не співпадають</p></div>
-                  <p><input type="submit" class="btn btn--blue" value="Продовжити"/></p>
+                  <p><input type="submit" class="btn btn--blue--regist" value="Продовжити"/></p>
                   <p><input type="reset" class="btn" value="відмінити"/></p>
                 </div>
             </form>

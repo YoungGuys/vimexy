@@ -102,7 +102,7 @@ img {
 }
 
 /* line 41, ../scss/_base.scss */
-.clearfix:after, .container:after, .register__bg:after, .page__events__item:after {
+.clearfix:after, .container:after, .row:after, .register__bg:after, .page__events__item:after {
   content: ' ';
   width: 0;
   height: 0;
@@ -144,6 +144,127 @@ img {
   margin: 0 auto;
   border-left: 1px solid #7f7d7c;
   border-right: 1px solid #7f7d7c;
+}
+
+/* line 1, ../scss/_screen.scss */
+aside {
+  width: 15.59792%;
+  margin-right: -1px;
+  float: left;
+  box-sizing: border-box;
+  border-right: 1px solid #7f7d7c;
+}
+
+/* line 14, ../scss/_screen.scss */
+.menu__item {
+  display: block;
+  padding: 0 8px;
+  color: #7f7d7c;
+  line-height: 35px;
+  font-size: 15px;
+  border-top: 1px solid #7f7d7c;
+}
+
+/* line 26, ../scss/_screen.scss */
+.history {
+  margin-top: 60px;
+}
+
+/* line 30, ../scss/_screen.scss */
+.history__title {
+  margin-bottom: 12px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* line 36, ../scss/_screen.scss */
+.history__list {
+  margin: 0 5px 5px 11%;
+}
+
+/* line 40, ../scss/_screen.scss */
+.history__list__item {
+  margin-bottom: 16px;
+  margin-bottom: 1.23077rem;
+  padding-left: 12px;
+}
+
+/* line 45, ../scss/_screen.scss */
+.history__list__item__date {
+  font-size: 14px;
+}
+
+/* line 49, ../scss/_screen.scss */
+.history__list__item__title {
+  font-size: 13px;
+}
+
+/* line 58, ../scss/_screen.scss */
+.page {
+  width: 84.40208%;
+  float: left;
+  box-sizing: border-box;
+  border-left: 1px solid #7f7d7c;
+}
+
+/* line 1, ../scss/page/_header.scss */
+.header {
+  width: 100%;
+  height: 200px;
+  background-image: url(../pic/bg-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 10, ../scss/page/_header.scss */
+.header__top {
+  width: 100%;
+  height: 45px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* line 17, ../scss/page/_header.scss */
+.logo {
+  margin: 10px 0;
+}
+
+/* line 21, ../scss/page/_header.scss */
+.row {
+  max-width: 1154px;
+  margin: 0 auto;
+}
+
+/* line 27, ../scss/page/_header.scss */
+.header__top__login__link {
+  float: right;
+  margin-top: 12px;
+}
+
+/* line 32, ../scss/page/_header.scss */
+.header__info {
+  margin: 30px;
+}
+
+/* line 36, ../scss/page/_header.scss */
+.btn--blue,
+.btn--red {
+  width: 160px;
+  height: 40px;
+  display: block;
+  margin-bottom: 10px;
+  border-radius: 5%;
+  border: none;
+  color: white;
+}
+
+/* line 47, ../scss/page/_header.scss */
+.btn--blue {
+  background-color: #76baeb;
+}
+
+/* line 51, ../scss/page/_header.scss */
+.btn--red {
+  background-color: #EE7565;
 }
 
 /* line 1, ../scss/page/_register.scss */
@@ -309,7 +430,7 @@ option {
 }
 
 /* line 154, ../scss/page/_register.scss */
-.btn--blue {
+.btn--blue--regist {
   margin: 1% auto;
   background-color: #76baeb !important;
   color: #fff;
@@ -337,7 +458,7 @@ select option[default] {
 модификатор &--active */
 /* line 179, ../scss/page/_register.scss */
 .password__incorrect {
-  color: #d3887d;
+  color: #EE7565;
   text-align: center;
 }
 /* line 182, ../scss/page/_register.scss */
@@ -366,163 +487,7 @@ select option[default] {
   color: white;
 }
 
-/* line 1, ../scss/_screen.scss */
-aside {
-  width: 15.59792%;
-  margin-right: -1px;
-  float: left;
-  box-sizing: border-box;
-  border-right: 1px solid #7f7d7c;
-}
-
-/* line 14, ../scss/_screen.scss */
-.menu__item {
-  display: block;
-  padding: 0 8px;
-  color: #7f7d7c;
-  line-height: 35px;
-  font-size: 15px;
-  border-top: 1px solid #7f7d7c;
-}
-
-/* line 26, ../scss/_screen.scss */
-.history {
-  margin-top: 60px;
-}
-
-/* line 30, ../scss/_screen.scss */
-.history__title {
-  margin-bottom: 12px;
-  text-align: center;
-  font-size: 14px;
-}
-
-/* line 36, ../scss/_screen.scss */
-.history__list {
-  margin: 0 5px 5px 11%;
-}
-
-/* line 40, ../scss/_screen.scss */
-.history__list__item {
-  margin-bottom: 16px;
-  margin-bottom: 1.23077rem;
-  padding-left: 12px;
-}
-
-/* line 45, ../scss/_screen.scss */
-.history__list__item__date {
-  font-size: 14px;
-}
-
-/* line 49, ../scss/_screen.scss */
-.history__list__item__title {
-  font-size: 13px;
-}
-
-/* line 58, ../scss/_screen.scss */
-.page {
-  width: 84.40208%;
-  float: left;
-  box-sizing: border-box;
-  border-left: 1px solid #7f7d7c;
-}
-
-/* line 68, ../scss/_screen.scss */
-.page__filter {
-  line-height: 36px;
-  padding: 0 3.90144% 0 1.74538%;
-}
-
-/* line 73, ../scss/_screen.scss */
-.page__filter__item {
-  width: 12.83368%;
-  display: inline-block;
-  margin-right: 3.08008%;
-}
-
-/* line 79, ../scss/_screen.scss */
-.page__filter__item__select {
-  width: 100%;
-}
-
-/* line 83, ../scss/_screen.scss */
-.page__filter__item--search {
-  width: 24.49889%;
-  float: right;
-}
-
-/* line 89, ../scss/_screen.scss */
-.page__events__item {
-  padding: 15px 3.90144% 15px 1.74538%;
-  border-top: 1px solid #7f7d7c;
-}
-
-/* line 95, ../scss/_screen.scss */
-.page__events__item__pic {
-  width: 25.61247%;
-  float: left;
-  margin-right: 2.22717%;
-}
-
-/* line 101, ../scss/_screen.scss */
-.page__events__item__pic__img {
-  width: 100%;
-}
-
-/* line 105, ../scss/_screen.scss */
-.page__events__item__info {
-  width: 47.88419%;
-  float: left;
-}
-
-/* line 110, ../scss/_screen.scss */
-.page__events__item__info__title {
-  margin-bottom: 10px;
-  color: #AFAEAE;
-  font-size: 18px;
-}
-
-/* line 116, ../scss/_screen.scss */
-.page__events__item__info__text {
-  margin-bottom: 12px;
-  color: #969594;
-}
-
-/* line 125, ../scss/_screen.scss */
-.page__events__item__info__filter__item {
-  width: 36px;
-  height: 35px;
-  display: inline-block;
-  margin-right: 10px;
-  border: 1px solid #969594;
-  border-radius: 100%;
-}
-
-/* line 134, ../scss/_screen.scss */
-.page__events__item__info__organizator {
-  width: 24.49889%;
-  color: #969594;
-  float: left;
-}
-
-/* line 144, ../scss/_screen.scss */
-.page__events__item__meta {
-  float: right;
-  line-height: 15px;
-  font-size: 13px;
-}
-
-/* line 154, ../scss/_screen.scss */
-.page__events__item__meta__adress {
-  margin: 10px 0;
-}
-
-/* line 158, ../scss/_screen.scss */
-.page__events__item__meta__user {
-  margin-bottom: 10px;
-}
-
-/* line 167, ../scss/_screen.scss */
+/* line 2, ../scss/page/_profile.scss */
 .profile__title {
   padding: 0 3.90144% 0 1.74538%;
   line-height: 36px;
@@ -530,7 +495,7 @@ aside {
   border-bottom: 1px solid #7f7d7c;
 }
 
-/* line 174, ../scss/_screen.scss */
+/* line 9, ../scss/page/_profile.scss */
 .profile__col-1 {
   width: 20.04454%;
   float: left;
@@ -539,37 +504,37 @@ aside {
   border-right: 1px solid #7f7d7c;
 }
 
-/* line 184, ../scss/_screen.scss */
+/* line 19, ../scss/page/_profile.scss */
 .profile__col-2 {
   width: 79.95546%;
   float: left;
 }
 
-/* line 189, ../scss/_screen.scss */
+/* line 24, ../scss/page/_profile.scss */
 .profile__avatar {
   width: 100%;
   margin-bottom: 10px;
 }
 
-/* line 194, ../scss/_screen.scss */
+/* line 29, ../scss/page/_profile.scss */
 .profile__user__adress {
   margin: 12px 0;
 }
 
-/* line 199, ../scss/_screen.scss */
+/* line 34, ../scss/page/_profile.scss */
 .profile__filters {
   padding: 10px 5.56793%;
   border-bottom: 1px solid #7f7d7c;
 }
 
-/* line 204, ../scss/_screen.scss */
+/* line 39, ../scss/page/_profile.scss */
 .profile__filters__skill__title {
   padding-bottom: 5px;
   font-size: 14px;
   line-height: 16px;
 }
 
-/* line 210, ../scss/_screen.scss */
+/* line 45, ../scss/page/_profile.scss */
 .profile__filters__skill__item {
   width: 50px;
   height: 50px;
@@ -580,61 +545,156 @@ aside {
   border-radius: 5px;
 }
 
-/* line 221, ../scss/_screen.scss */
+/* line 56, ../scss/page/_profile.scss */
 .profile__rating {
   padding: 10px 5.56793%;
   border-bottom: 1px solid #7f7d7c;
 }
 
-/* line 226, ../scss/_screen.scss */
+/* line 61, ../scss/page/_profile.scss */
 .profile__rating__title {
   padding: 0 3.90144% 0 1.74538% 5px;
 }
 
-/* line 236, ../scss/_screen.scss */
+/* line 71, ../scss/page/_profile.scss */
 .profile__comment {
   padding: 10px 5.56793%;
 }
 
-/* line 240, ../scss/_screen.scss */
+/* line 75, ../scss/page/_profile.scss */
 .profile__comment__title {
   padding: 0 3.90144% 0 1.74538% 5px;
 }
 
-/* line 244, ../scss/_screen.scss */
+/* line 79, ../scss/page/_profile.scss */
 .profile__comment__list__item {
   padding: 10px;
   margin-bottom: 20px;
 }
 
-/* line 249, ../scss/_screen.scss */
+/* line 84, ../scss/page/_profile.scss */
 .profile__comment__list__item__avatar {
   width: 50px;
   float: left;
   margin-right: 10px;
 }
 
-/* line 255, ../scss/_screen.scss */
+/* line 90, ../scss/page/_profile.scss */
 .profile__comment__list__item__info {
   overflow: hidden;
 }
 
-/* line 259, ../scss/_screen.scss */
+/* line 94, ../scss/page/_profile.scss */
 .profile__comment__list__item__name {
   float: left;
   font-size: 13px;
 }
 
-/* line 264, ../scss/_screen.scss */
+/* line 99, ../scss/page/_profile.scss */
 .profile__comment__list__item__date {
   float: right;
   font-size: 14px;
 }
 
-/* line 269, ../scss/_screen.scss */
+/* line 104, ../scss/page/_profile.scss */
 .profile__comment__list__item__text {
   margin-top: 20px;
   font-style: 12px;
+}
+
+/* line 2, ../scss/page/_events.scss */
+.page__filter {
+  line-height: 36px;
+  padding: 0 3.90144% 0 1.74538%;
+}
+
+/* line 7, ../scss/page/_events.scss */
+.page__filter__item {
+  width: 12.83368%;
+  display: inline-block;
+  margin-right: 3.08008%;
+}
+
+/* line 13, ../scss/page/_events.scss */
+.page__filter__item__select {
+  width: 100%;
+}
+
+/* line 17, ../scss/page/_events.scss */
+.page__filter__item--search {
+  width: 24.49889%;
+  float: right;
+}
+
+/* line 23, ../scss/page/_events.scss */
+.page__events__item {
+  padding: 15px 3.90144% 15px 1.74538%;
+  border-top: 1px solid #7f7d7c;
+}
+
+/* line 29, ../scss/page/_events.scss */
+.page__events__item__pic {
+  width: 25.61247%;
+  float: left;
+  margin-right: 2.22717%;
+}
+
+/* line 35, ../scss/page/_events.scss */
+.page__events__item__pic__img {
+  width: 100%;
+}
+
+/* line 39, ../scss/page/_events.scss */
+.page__events__item__info {
+  width: 47.88419%;
+  float: left;
+}
+
+/* line 44, ../scss/page/_events.scss */
+.page__events__item__info__title {
+  margin-bottom: 10px;
+  color: #AFAEAE;
+  font-size: 18px;
+}
+
+/* line 50, ../scss/page/_events.scss */
+.page__events__item__info__text {
+  margin-bottom: 12px;
+  color: #969594;
+}
+
+/* line 59, ../scss/page/_events.scss */
+.page__events__item__info__filter__item {
+  width: 36px;
+  height: 35px;
+  display: inline-block;
+  margin-right: 10px;
+  border: 1px solid #969594;
+  border-radius: 100%;
+}
+
+/* line 68, ../scss/page/_events.scss */
+.page__events__item__info__organizator {
+  width: 24.49889%;
+  color: #969594;
+  float: left;
+}
+
+/* line 78, ../scss/page/_events.scss */
+.page__events__item__meta {
+  float: right;
+  line-height: 15px;
+  font-size: 13px;
+}
+
+/* line 88, ../scss/page/_events.scss */
+.page__events__item__meta__adress {
+  margin: 10px 0;
+}
+
+/* line 92, ../scss/page/_events.scss */
+.page__events__item__meta__user {
+  margin-bottom: 10px;
 }
 
 /***********************************************************************************
