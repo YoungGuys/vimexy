@@ -1,0 +1,99 @@
+
+.page__filter {
+    line-height: 36px;
+    padding: 0 38% * 100 / $widthPage 0 17% * 100 / $widthPage;
+}
+
+.page__filter__item {
+    width: 125% * 100 / $widthPage;
+    display: inline-block;
+    margin-right: 30% * 100 / $widthPage;
+}
+
+.page__filter__item__select {
+    width: 100%;
+}
+
+.page__filter__item--search {
+    width: 220% * 100 / 898;
+    float: right;
+}
+
+
+.page__events__item {
+    @extend .clearfix;
+    padding: 15px 38% * 100 / $widthPage 15px 17% * 100 / $widthPage;
+    border-top: 1px solid $c-grey;
+}
+
+.page__events__item__pic {
+    width: 230% * 100 / 898 ;
+    float: left;
+    margin-right: 20% * 100 / 898;
+}
+
+.page__events__item__pic__img {
+    width: 100%;
+}
+
+.page__events__item__info {
+    width: 430% * 100 / 898;
+    float: left;
+}
+
+.page__events__item__info__title {
+    margin-bottom: 10px;
+    color: $c-grey-title;
+    font-size: 18px;
+}
+
+.page__events__item__info__text {
+    margin-bottom: 12px;
+    color: $c-grey-text;
+}
+
+.page__events__item__info__filter {
+
+}
+
+.page__events__item__info__filter__item {
+    width: 36px;
+    height: 35px;
+    display: inline-block;
+    margin-right: 10px;
+    border: 1px solid #969594;
+    border-radius: 100%;
+}
+
+.page__events__item__info__organizator {
+    width: 220% * 100 / 898;
+    color: $c-grey-text;
+    float: left;
+}
+
+.page__events__item__info__organizator__link {
+
+}
+
+.page__events__item__meta {
+    float: right;
+    line-height: 15px;
+    font-size: 13px;
+}
+
+.page__events__item__meta__date {
+
+}
+
+.page__events__item__meta__adress {
+    margin: 10px 0;
+}
+
+.page__events__item__meta__user {
+    margin-bottom: 10px;
+
+}
+
+
+
+
