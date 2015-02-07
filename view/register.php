@@ -84,6 +84,7 @@
                         </select>
 
                         <select name="year" class="registration__input--select">
+                            <option value="" default>рік</option>
                             <option value="1994">1994</option>
                         </select>
                     </p>
