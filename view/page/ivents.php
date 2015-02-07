@@ -37,7 +37,7 @@
 
         <div class="page__events__item">
             <div class="page__events__item__pic">
-                <img src="" alt="event-img"/>
+                <img class="page__events__item__pic__img" src="" alt="event-img"/>
             </div>
             <div class="page__events__item__info">
                 <h4 class="page__events__item__info__title">Допомога дитячому будинку</h4>

@@ -1,1 +1,1 @@
-<section class="container page">
+<section class="container">

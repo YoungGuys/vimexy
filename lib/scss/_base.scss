@@ -1,21 +1,25 @@
 $c-blue: #76baeb;
 $c-red: #d3887d;
 $c-grey: #7f7d7c;
+$c-grey-title: #AFAEAE;
+$c-grey-text: #969594;
 //979695
 //595652
 
 
 
-$base-font-size: 14px !global;
-$base-line-height: 29px !global;
+$base-font-size: 13px !global;
+$base-line-height: 16px !global;
 $rhythm-unit: rem !global;
 $rem-with-px-fallback: true !global;
 
 
 @include establish-baseline;
 
+html,
 body {
-    //@include debug-vertical-alignment
+    height: 100%;
+//    @include debug-vertical-alignment;
     //@include adjust-font-size-to
     font-family: 'Open Sans', Verdana, Tahoma, Arial, sans-serif;
 }
