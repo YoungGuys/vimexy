@@ -69,7 +69,8 @@
                     <p class="registration__item">
                         <label for="email">e-mail</label>
 
-                        <input type="email" class="registration__input" name="email" id="email"/>
+                        <input type="email" class="registration__input" name="email" id="email"
+                                placeholder="t.shevch@vimexy.com"/>
                     </p>
 
                     <p class="registration__item">
@@ -84,7 +85,6 @@
                         </select>
 
                         <select name="year" class="registration__input--select">
-                            <option value="" default>рік</option>
                             <option value="1994">1994</option>
                         </select>
                     </p>
@@ -107,7 +107,7 @@
                     <p class="registration__item">
                         <label for="city">Місто</label>
 
-                        <input type="text" class="registration__input" name="city" id="city" placeholder="Моринці"/>
+                        <input type="text" class="registration__input" name="city" id="city" placeholder="Київ"/>
                     </p>
 
                     <p class="registration__item">
@@ -123,8 +123,9 @@
                 <!-- BOX BOTTOM -->
 
                 <div class="registration__bottom">
-                  <p><input type="submit" class="btn btn--blue"/></p>
-                  <p><input type="reset" class="btn"/></p>
+                  <div class="password__incorrect password__incorrec--active"><p>Паролі не співпадають</p></div>
+                  <p><input type="submit" class="btn btn--blue" value="Продовжити"/></p>
+                  <p><input type="reset" class="btn" value="відмінити"/></p>
                 </div>
             </form>
         </div>

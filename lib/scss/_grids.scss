@@ -1,9 +1,9 @@
 // Screen
 // ======
 
-@import "susy";
+//@import "susy";
 
-$susy: (
+/*$susy: (
     columns: 3,
     gutters: 1/5,
     math: fluid,
@@ -18,7 +18,7 @@ $susy: (
         toggle: top right
     )
 );
-
+*/
 
 //h1, h2, h3, h4, h5, h6, p, img, iframe, video
 //    @include margin-trailer
@@ -50,3 +50,4 @@ $susy: (
     border-left: 1px solid $c-grey;
     border-right: 1px solid $c-grey;
 }
+
