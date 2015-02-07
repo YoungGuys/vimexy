@@ -20,4 +20,9 @@ class User extends System\View{
     {
 
     }
+
+    public function registration() {
+        $this->loadHead();
+        include_once("view/register.php");
+    }
 }

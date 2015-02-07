@@ -23,6 +23,12 @@ class User extends System\Controller{
     }
 
     public function registration() {
-        echo "ok";
+        $this->view->registration();
+    }
+
+    public function checkUser() {
+        if ($_GET['email'] && $_GET['pass']) {
+            $this->model->checkUser();
+        }
     }
 } 

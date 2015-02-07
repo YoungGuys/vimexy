@@ -32,9 +32,6 @@ ParseClient::initialize(
 
 define("DEV_MOD",1);
 
-$testObject = ParseObject::create("TestObject");
-$testObject->set("foo", "111");
-$testObject->save();
 
 $rout = new Routing();
 $rout->loadPage();

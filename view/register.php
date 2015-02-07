@@ -13,15 +13,15 @@
 
                 <!-- Form itself -->
 
-                <form class="header__login">
+                <form class="header__login" action="<?=SITE?>User/checkUser" method="get"">
 
                     <a href="" class="header__landing-link">Більше про нас</a>
                     
                     <!-- Link to landing page -->
 
-                    <input class="header__login__email" type="email" placeholder="  e-mail"/>
+                    <input class="header__login__email" type="email" placeholder="  e-mail" name="email"/>
 
-                    <input class="header__login__password" type="password" placeholder="  пароль"/>
+                    <input class="header__login__password" type="password" placeholder="  пароль" name="pass"/>
 
                     <input type="submit"  class="header__login__submit" value="Увійти"/>
 
