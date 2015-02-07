@@ -13,7 +13,6 @@ class Main {
     }
 
     public function index() {
-        echo "Controller/Main";
         $this->model->index();
         $this->view->index();
     }

@@ -3,21 +3,25 @@
 
     <!-- SECTION HEADER -->
 
-    <section class="header">
+    <section class="register__header">
         <header>
             <div class="header__login">
 
-                <!-- Link to landing page -->
 
-                <a href="" class="header__landing-link"><p>Більше про нас</p></a>
+
+
 
                 <!-- Form itself -->
 
-                <form class="header__login">
+                <form class="header__login" action="<?=SITE?>User/checkUser" method="get"">
 
-                    <input class="header__login__email" type="email" placeholder="e-mail"/>
+                    <a href="" class="header__landing-link">Більше про нас</a>
+                    
+                    <!-- Link to landing page -->
 
-                    <input class="header__login__password" type="password" placeholder="пароль"/>
+                    <input class="header__login__email" type="email" placeholder="  e-mail" name="email"/>
+
+                    <input class="header__login__password" type="password" placeholder="  пароль" name="pass"/>
 
                     <input type="submit"  class="header__login__submit" value="Увійти"/>
 
@@ -41,79 +45,86 @@
 
             <!-- REGISTRATION FORM -->
 
-            <form class="registration__form">
-                <p class="registration__item">
+            <form class="registration__form" action ="<?=SITE?>User/addUser" method="get">
+                <div class="registration__form--left">
+                    <p class="registration__item">
 
-                    <label for="name">Ім'я</label>
+                        <label for="name">Ім'я</label>
 
-                    <input class="registration__input" name="name" type="text" placeholder="Тарас">
-                </p>
+                        <input class="registration__input" name="name" id="name" type="text" placeholder="Тарас">
+                    </p>
 
-                <p class="registration__item">
-                    <label for="password">Прізвище</label>
+                    <p class="registration__item">
+                        <label for="password">Пароль</label>
 
-                    <input type="password" class="registation__input" name="password" placeholder="бажано 8 символів"/>
-                </p>
+                        <input type="password" class="registration__input" name="password" id="password"
+                               placeholder="бажано 8 символів"/>
+                    </p>
 
-                <!-- DATE MONTH YEAR
+                    <!-- DATE MONTH YEAR
 
-                identify class???
-                -->
+                    identify class???
+                    -->
 
-                <p class="registration__item">
-                    <label for="email">e-mail</label>
+                    <p class="registration__item">
+                        <label for="email">e-mail</label>
 
-                    <input type="email" class="registration__input" name="email"/>
-                </p>
+                        <input type="email" class="registration__input" name="email" id="email"/>
+                    </p>
 
-                <p class="registration__item">
-                    <label>Дата народження</label>
+                    <p class="registration__item">
+                        <label>Дата народження</label>
 
-                    <select name="day">
-                        <option value="8">8</option>
-                    </select>
+                        <select name="day" class="registration__input--select">
+                            <option value="8">8</option>
+                        </select>
 
-                    <select name="month">
-                        <option value="лютий">лютий</option>
-                    </select>
+                        <select name="month" class="registration__input--select">
+                            <option value="02">02</option>
+                        </select>
 
-                    <select name="year">
-                        <option value="1994">1994</option>
-                    </select>
-                </p>
+                        <select name="year" class="registration__input--select">
+                            <option value="1994">1994</option>
+                        </select>
+                    </p>
 
-                <p class="registration__item">
-                    <label for="city">Місто</label>
+                </div>
 
-                    <input type="text" class="registration__input" name="city" placeholder="Моринці"/>
-                </p>
+                <div class="registration__form--right">
+                    <p class="registration__item">
+                        <label for="lastname">Прізвище</label>
 
-                <p class="registration__item">
-                    <label for="lastname">Прізвище</label>
+                        <input type="text" class="registration__input" name="lastname" id="lastname" placeholder="Шевченко"/>
+                    </p>
 
-                    <input type="text" class="registration__input"/>
-                </p>
+                    <p class="registration__item">
+                        <label for="confirm">Перевірка паролю</label>
 
-                <p class="registration__item">
-                    <label for="confirm">Прізвище</label>
+                        <input type="password" class="registration__input" name="confirm" id="confirm" placeholder="бажано 8 символів"/>
+                    </p>
 
-                    <input type="password" class="registation__input" name="confirm" placeholder="бажано 8 символів"/>
-                </p>
+                    <p class="registration__item">
+                        <label for="city">Місто</label>
 
-                <p class="registration_item">
-                    <label>Стать</label>
+                        <input type="text" class="registration__input" name="city" id="city" placeholder="Моринці"/>
+                    </p>
 
-                    <input type="radio" name="sex" value="Чоловіча"/>
-                    <input type="radio" name="sex" value="Жіноча"/>
-                </p>
+                    <p class="registration__item">
+                        <label>Стать</label>
+
+                        <input type="radio" name="sex" id="man" value="man"/>
+                        <label for="man" class="labelsex">Чоловіча</label>
+                        <input type="radio" name="sex" id="woman" value="girl"/>
+                        <label for="woman" class="labelsex">Жіноча</label>
+                    </p>
+                </div>
 
                 <!-- BOX BOTTOM -->
 
                 <div class="registration__bottom">
-                  <input type="submit" class="btn btn--blue" >
-                  <input type="reset" class="btn"
+                  <p><input type="submit" class="btn btn--blue"/></p>
+                  <p><input type="reset" class="btn"/></p>
                 </div>
-
             </form>
         </div>
     </section>
@@ -122,7 +133,7 @@
 
     <!-- BOTTOM SECTION -->
 
-    <section class="footer">
+    <section class="register__footer">
         <div class="footer__items">
             <p>&copy;Vimexy 2015</p>
             <a href=""><i class="i-fb"/></a>

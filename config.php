@@ -2,7 +2,7 @@
 
 
 
-define("SITE","http://blog.skillsacademy.com.ua/");
+define("SITE","http://vimexy.com/");
 
 
 

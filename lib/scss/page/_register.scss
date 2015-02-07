@@ -1,0 +1,185 @@
+.register__bg {
+    background-image: url(../pic/bg-register.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    @extend .clearfix
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+/*--------------------------------\
+         #HEADER SECTION
+\--------------------------------*/
+
+
+
+
+.register__header {
+    width: 100%;
+    max-height: 40px;
+    margin: 0 auto;
+}
+
+.header__login{
+    height: 100%;
+    width: 90%;
+    display: inline-block;
+    text-align: right;
+}
+
+.header__landing-link {
+    width: 80%;
+    margin-right: 2%;
+}
+
+.header__landing-link:hover{
+    text-decoration: none;
+}
+
+.header__login__email,
+.header__login__password {
+    color: #fff;
+    background: none;
+    border: 1px solid white;
+    @include input-placeholder {
+        color: #fff;
+    }
+}
+
+.header__login__submit{
+
+    background: none;
+    border: none;
+    color: white;
+}
+
+
+
+
+/*--------------------------------\
+         #REGISTRATION SECTION
+\--------------------------------*/
+
+
+
+
+.registration {
+    position: relative;
+    top: 10%;
+}
+
+.registration__box{
+    max-height: 440px;
+    max-width: 550px;
+    background-color: rgba(#fff, 0.8);
+    margin: 5% auto;
+ }
+
+h3{
+    text-align: center;
+    padding: 3% 0 3% 0;
+}
+
+
+// FORM
+
+
+.registration__form{
+    width: 100%;
+    dicplay: inline-block;
+    height: 80%;
+}
+.registration__form label {
+    display: block;
+}
+
+.labelsex {
+    display: inline !important;
+}
+.registration__input,
+.registration__input--select {
+    background-color: rgba(#fff, 0.8);
+    border: 1px solid lightgrey;
+    padding-left: 10px;
+}
+.registration__input--select {
+    @include input-placeholder {
+        color: #fff;
+    }
+}
+
+// LEFT DIV
+
+
+.registration__form--left {
+    height: 100%;
+    width: 50%;
+    float: left;
+    margin-bottom: 3%;
+}
+
+.registration__item {
+    margin-left: 15%;
+}
+
+
+// RIGHT DIV
+
+
+.registration__form--right {
+    height: 100%;
+    width: 50%;
+    float: right;
+}
+
+
+// BOTTOM DIV
+
+
+.registration__bottom {
+    clear: both;
+    text-align: center;
+    margin: 4% 0 2% 0;
+}
+
+.btn--blue {
+    margin: 1% auto;
+}
+
+
+
+
+
+
+/*--------------------------------\
+         #FOOTER SECTION
+\--------------------------------*/
+
+.register__footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer__items {
+    width: 100%;
+}
+
+.footer__items p {
+    margin: 0 2% 0 10%;
+    color: white;
+}
+
+
+
+
+
