@@ -45,7 +45,7 @@
 
             <!-- REGISTRATION FORM -->
 
-            <form class="registration__form">
+            <form class="registration__form" action ="<?=SITE?>User/addUser" method="get">
                 <div class="registration__form--left">
                     <p class="registration__item">
 
@@ -112,9 +112,9 @@
                     <p class="registration__item">
                         <label>Стать</label>
 
-                        <input type="radio" name="sex" id="man" value="Чоловіча"/>
+                        <input type="radio" name="sex" id="man" value="man"/>
                         <label for="man" class="labelsex">Чоловіча</label>
-                        <input type="radio" name="sex" id="woman" value="Жіноча"/>
+                        <input type="radio" name="sex" id="woman" value="girl"/>
                         <label for="woman" class="labelsex">Жіноча</label>
                     </p>
                 </div>

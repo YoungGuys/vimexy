@@ -8,7 +8,10 @@
 
 namespace Model;
 use Balon\System;
+use Parse\ParseException;
+use Parse\ParseObject;
 use Parse\ParseQuery;
+use Parse\ParseUser;
 
 class User extends System\Model{
 
@@ -23,13 +26,17 @@ class User extends System\Model{
     }
 
     public function checkUser() {
-        $name = $_GET['name'];
         $pass = $_GET['pass'];
-        $query = new ParseQuery("User");
-        $result = $query->get("2s306ZpwGD");
-        var_dump($result);
-        $query->equalTo("username","reg_box@ukr.nete");
-        $result = $query->find();
-        var_dump($result);
+        $email = $_GET['email'];
+        try {
+            ParseUser::logIn($email, $pass);
+            header("Location:".SITE);
+        } catch (ParseException $error) {
+            echo "Bad pass";
+        }
+    }
+
+    public function addUser() {
+
     }
 }
