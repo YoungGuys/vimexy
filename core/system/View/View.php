@@ -18,7 +18,6 @@ abstract class View {
 
     protected function loadHead($params = []) {
         if (file_exists("./view/head.php")) {
-            echo "okey";
             include_once("./view/head.php");
         }
     }
