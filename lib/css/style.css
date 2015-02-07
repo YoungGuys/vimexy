@@ -69,14 +69,14 @@ html {
   line-height: 1.23077em;
 }
 
-/* line 19, ../scss/_base.scss */
+/* line 20, ../scss/_base.scss */
 html,
 body {
   height: 100%;
   font-family: 'Open Sans', Verdana, Tahoma, Arial, sans-serif;
 }
 
-/* line 27, ../scss/_base.scss */
+/* line 28, ../scss/_base.scss */
 p {
   word-break: break-all;
   word-break: break-word;
@@ -86,7 +86,7 @@ p {
   hyphens: auto;
 }
 
-/* line 31, ../scss/_base.scss */
+/* line 32, ../scss/_base.scss */
 a {
   text-decoration: none;
   color: #76baeb;
@@ -96,13 +96,13 @@ a:hover, a:focus {
   text-decoration: underline;
 }
 
-/* line 36, ../scss/_base.scss */
+/* line 37, ../scss/_base.scss */
 img {
   max-width: 100%;
 }
 
-/* line 41, ../scss/_base.scss */
-.clearfix:after, .container:after, .row:after, .register__bg:after, .page__events__item:after {
+/* line 42, ../scss/_base.scss */
+.clearfix:after, .container:after, .row:after, .register__bg:after, .page__events__item:after, .event__header:after {
   content: ' ';
   width: 0;
   height: 0;
@@ -113,7 +113,7 @@ img {
   clear: both;
 }
 
-/* line 53, ../scss/_base.scss */
+/* line 54, ../scss/_base.scss */
 .animate, .modal_bg {
   -webkit-transition: all .5s ease;
   -moz-transition: all .5s ease;
@@ -664,37 +664,158 @@ select option[default] {
 }
 
 /* line 59, ../scss/page/_events.scss */
+.page__events__item__info__filter__title {
+  margin: 35px 0 10px;
+  font-size: 20px;
+}
+
+/* line 64, ../scss/page/_events.scss */
 .page__events__item__info__filter__item {
-  width: 36px;
-  height: 35px;
+  width: 55px;
+  height: 55px;
   display: inline-block;
   margin-right: 10px;
   border: 1px solid #969594;
   border-radius: 100%;
 }
 
-/* line 68, ../scss/page/_events.scss */
+/* line 73, ../scss/page/_events.scss */
 .page__events__item__info__organizator {
   width: 24.49889%;
   color: #969594;
   float: left;
 }
 
-/* line 78, ../scss/page/_events.scss */
+/* line 83, ../scss/page/_events.scss */
 .page__events__item__meta {
   float: right;
   line-height: 15px;
   font-size: 13px;
 }
 
-/* line 88, ../scss/page/_events.scss */
+/* line 93, ../scss/page/_events.scss */
 .page__events__item__meta__adress {
   margin: 10px 0;
 }
 
-/* line 92, ../scss/page/_events.scss */
+/* line 97, ../scss/page/_events.scss */
 .page__events__item__meta__user {
   margin-bottom: 10px;
+}
+
+/* line 104, ../scss/page/_events.scss */
+.event__header {
+  margin-bottom: 15px;
+  padding: 0 3.90144% 0 1.74538%;
+  line-height: 36px;
+  border-bottom: 1px solid #7f7d7c;
+}
+
+/* line 112, ../scss/page/_events.scss */
+.event__header__title {
+  float: left;
+  font-size: 22px;
+}
+
+/* line 117, ../scss/page/_events.scss */
+.event__header__users {
+  float: right;
+}
+
+/* line 121, ../scss/page/_events.scss */
+.event__col-1 {
+  width: 60.0616%;
+  padding: 0 3.90144% 0 1.74538%;
+  box-sizing: border-box;
+  float: left;
+}
+
+/* line 128, ../scss/page/_events.scss */
+.event__col-2 {
+  width: 39.9384%;
+  float: left;
+}
+
+/* line 133, ../scss/page/_events.scss */
+.event__pic {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* line 138, ../scss/page/_events.scss */
+.event__btn_add {
+  float: right;
+}
+
+/* line 143, ../scss/page/_events.scss */
+.event__descr__title {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+/* line 147, ../scss/page/_events.scss */
+.event__descr__text {
+  font-size: 14px;
+}
+
+/* line 152, ../scss/page/_events.scss */
+.event__gop {
+  position: relative;
+  height: 235px;
+  margin-bottom: 15px;
+}
+
+/* line 158, ../scss/page/_events.scss */
+.event__geo__map {
+  margin-bottom: 5px;
+}
+
+/* line 162, ../scss/page/_events.scss */
+.event__date {
+  margin-bottom: 20px;
+}
+
+/* line 167, ../scss/page/_events.scss */
+.event__contact__img {
+  width: 135px;
+  margin-right: 5px;
+}
+
+/* line 174, ../scss/page/_events.scss */
+.event__date {
+  margin-bottom: 10px;
+}
+
+/* line 178, ../scss/page/_events.scss */
+.event__date__title {
+  font-size: 20px;
+}
+
+/* line 182, ../scss/page/_events.scss */
+.event__date__calendar {
+  margin-right: 10px;
+  float: left;
+}
+
+/* line 187, ../scss/page/_events.scss */
+.event__date__info {
+  overflow: hidden;
+}
+
+/* line 195, ../scss/page/_events.scss */
+.event__contact__title {
+  font-size: 20px;
+}
+
+/* line 199, ../scss/page/_events.scss */
+.event__contact__img {
+  margin-right: 5px;
+  float: left;
+}
+
+/* line 204, ../scss/page/_events.scss */
+.event__contact__info {
+  overflow: hidden;
 }
 
 /***********************************************************************************
