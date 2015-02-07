@@ -8,7 +8,15 @@
 				</div>
 				<div class="modal__content">
 					<p>
-						Якийсь тексті
+						<label>Заголовок</label>
+						<input type="text"/>
+					</p>
+					<p>
+						<label>Опис</label>
+						<textarea name="" id="" cols="30" rows="10"></textarea>
+					</p>
+					<p>
+
 					</p>
 				</div>
 				<div class="modal__footer">
