@@ -9,6 +9,7 @@
 namespace Controller;
 use Balon\Date;
 use Balon\System;
+use Parse\ParseException;
 use Parse\ParseUser;
 
 class User extends System\Controller{
@@ -52,13 +53,12 @@ class User extends System\Controller{
             $user->set("city", $_GET['city']);
 
             $date = new \DateTime();
-            $date->setDate($_GET['year'],$_GET['month'],$_GET['day']);
-
-            $user->set("birthDay",$date);
+            $date->setDate($_GET['year'], intval($_GET['month']), $_GET['day']);
+            $user->set("birthDate",$date);
             $user->signUp();
         }
         else {
-            header("Location:".SITE."/User/registration?error=1");//if password != confirm go to the registration
+            header("Location:".SITE."User/registration?error=1");//if password != confirm go to the registration
             // TODO location
         }
     }

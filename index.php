@@ -6,7 +6,6 @@
         */
 
 
-session_start();
 ini_set("error_reporting",3);
 ini_set("display_errors","On");
 ini_set("mode_resrite","On");
@@ -17,6 +16,8 @@ define('DOCROOT', dirname(__FILE__));
 require 'config.php';
 require 'vendor/autoload.php';
 require 'core/lib/php/autoloader.php';
+
+session_start();
 
 use Balon\Routing;
 use Parse\ParseObject;
