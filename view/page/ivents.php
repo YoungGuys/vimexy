@@ -66,16 +66,16 @@
                         <?=$event->date ?> <?php if ($event->finishDate) echo "- ".$event->finishDate; ?>
                         <?=$event->time?>
                     </time>
-                    <p class="page__events__item__meta__adress" data-lat="<?=$event->location->getLatitude()?>"
+                    <p class="page__events__item__meta__adress js-location" data-lat="<?=$event->location->getLatitude()?>"
                         data-lon="<?=$event->location->getLongitude()?>">
-                        <i class="i-location-mini"></i>
-                        Київ, вул. Мілютенко 38
+                        <i class="i-location"></i>
+                        <span class="js-location-text"></span>
                     </p>
                     <p class="page__events__item__meta__user">
-                        <i class="i-user-mini"></i>
+                        <i class="i-user"></i>
                         12
                     </p>
-                    <a class="btn page__events__item__meta__btn" href="#">Хочу допомогти</a>
+                    <a class="btn btn--blue btn--full page__events__item__meta__btn" href="#">Хочу допомогти</a>
                 </div>
             </div>
         <?php } ?>
