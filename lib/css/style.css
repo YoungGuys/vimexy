@@ -292,30 +292,33 @@ i {
 
 /* line 3, ../scss/_button.scss */
 .btn {
+  padding: 5px 10px;
+  display: inline-block;
   color: #000;
   background: none;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
-/* line 10, ../scss/_button.scss */
+/* line 12, ../scss/_button.scss */
 .btn:active, .btn:focus {
   outline: none;
 }
-/* line 15, ../scss/_button.scss */
+/* line 17, ../scss/_button.scss */
 .btn--red {
   color: #fff;
   background: #D3887D;
 }
-/* line 20, ../scss/_button.scss */
+/* line 22, ../scss/_button.scss */
 .btn--blue {
   color: #fff;
   background: #76baeb;
 }
-/* line 25, ../scss/_button.scss */
+/* line 27, ../scss/_button.scss */
 .btn--big {
   width: 180px;
   height: 32px;
+  padding: 0;
   line-height: 32px;
   text-align: center;
   font-size: 16px;
@@ -523,7 +526,7 @@ footer span {
 
 /* line 1, ../scss/page/_register.scss */
 .register__bg {
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 100%;
   background-image: url(../pic/bg-register.jpg);
@@ -722,6 +725,32 @@ select option[default] {
 .footer__items p {
   margin: 0 2% 0 10%;
   color: white;
+}
+
+/* line 204, ../scss/page/_register.scss */
+.site {
+  text-align: center;
+  color: #fff;
+}
+
+/* line 208, ../scss/page/_register.scss */
+.site__name {
+  margin-top: 10%;
+  text-transform: uppercase;
+  font-size: 56px;
+}
+
+/* line 214, ../scss/page/_register.scss */
+.site__slogo {
+  margin: 35px 0 15px;
+  font-size: 28px;
+}
+
+/* line 219, ../scss/page/_register.scss */
+.site__descrt {
+  width: 300px;
+  margin: 15px auto;
+  font-size: 15px;
 }
 
 /* line 2, ../scss/page/_profile.scss */

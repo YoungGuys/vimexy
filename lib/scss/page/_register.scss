@@ -1,6 +1,6 @@
 .register__bg {
     @extend .clearfix;
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 100%;
     background-image: url(../pic/bg-register.jpg);
@@ -201,3 +201,23 @@ select option[default] {
 
 
 
+.site {
+    text-align: center;
+    color: #fff;
+}
+.site__name {
+    margin-top: 10%;
+    text-transform: uppercase;
+    font-size: 56px;
+}
+
+.site__slogo {
+    margin: 35px 0 15px;
+    font-size: 28px;
+}
+
+.site__descrt {
+    width: 300px;
+    margin: 15px auto;
+    font-size: 15px;
+}
