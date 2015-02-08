@@ -1,19 +1,13 @@
 .register__bg {
+    @extend .clearfix;
+    position: relative;
+    width: 100%;
+    height: 100%;
     background-image: url(../pic/bg-register.jpg);
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
-    width: 100%;
-    height: 100%;
-    @extend .clearfix
 }
-
-body,
-html {
-    height: 100%;
-    width: 100%;
-}
-
 
 
 /*--------------------------------\
@@ -29,16 +23,16 @@ html {
     margin: 0 auto;
 }
 
-.header__login{
-    height: 100%;
-    width: 90%;
-    display: inline-block;
+.header__login {
+    @extend .row;
+    line-height: 40px;
     text-align: right;
 }
 
 .header__landing-link {
     width: 80%;
     margin-right: 2%;
+    color: #fff;
 }
 
 .header__landing-link:hover{
@@ -78,7 +72,6 @@ html {
 }
 
 .registration__box{
-    max-height: 440px;
     max-width: 550px;
     background-color: rgba(#fff, 0.8);
     margin: 5% auto;
@@ -93,24 +86,29 @@ h3{
 // FORM
 
 
-.registration__form{
+.registration__form {
     width: 100%;
-    dicplay: inline-block;
-    height: 80%;
+    padding-bottom: 10px;
 }
-.registration__form label {
-    display: block;
+
+.registration__title {
+    font-size: 20px;
 }
+//.registration__form label {
+//    display: block;
+//}
 
 .labelsex {
     display: inline !important;
 }
 .registration__input,
 .registration__input--select {
+    margin: 3px 0 15px;
+    padding: 3px 10px;
+    color: #ddd;
+    font-size: 14px;
     background-color: rgba(#fff, 0.8);
     border: 1px solid lightgrey;
-    padding-left: 10px;
-    margin: 3px 0 15px;
 }
 
 option {
@@ -129,6 +127,12 @@ option {
 
 .registration__item {
     margin-left: 15%;
+
+    label {
+        margin: 7px 0 4px;
+        display: block;
+        font-size: 15px;
+    }
 }
 
 
@@ -159,14 +163,7 @@ option {
     padding: 5px;
 }
 
-.btn {
-    background: none;
-    border: none;
-}
-.btn:active,
-.btn:focus {
-    outline: none;
-}
+
 
 select option[default] {
     color: $c-grey;
@@ -192,10 +189,7 @@ select option[default] {
     width: 100%;
     position: absolute;
     bottom: 0;
-}
-
-.footer__items {
-    width: 100%;
+    background: none;
 }
 
 .footer__items p {

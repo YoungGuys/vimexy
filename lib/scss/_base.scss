@@ -1,5 +1,5 @@
 $c-blue: #76baeb;
-$c-red: #EE7565;
+$c-red: #D3887D;
 $c-grey: #7f7d7c;
 $c-grey-title: #AFAEAE;
 $c-grey-text: #969594;
@@ -19,7 +19,8 @@ $rem-with-px-fallback: true !global;
 
 html,
 body {
-    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
 //    @include debug-vertical-alignment;
 //    @include adjust-font-size-to
     font-family: 'Open Sans', Verdana, Tahoma, Arial, sans-serif;

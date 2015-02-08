@@ -1,7 +1,9 @@
 
 .page__filter {
-    line-height: 36px;
+    height: 35px;
+    line-height: 35px;
     padding: 0 38% * 100 / $widthPage 0 17% * 100 / $widthPage;
+    border-bottom: 1px solid $c-grey;
 }
 
 .page__filter__item {
@@ -23,7 +25,6 @@
 .page__events__item {
     @extend .clearfix;
     padding: 15px 38% * 100 / $widthPage 15px 17% * 100 / $widthPage;
-    border-top: 1px solid $c-grey;
 }
 
 .page__events__item__pic {
@@ -145,19 +146,28 @@
     font-size: 20px;
 }
 .event__descr__text {
+    line-height: 20px;
     font-size: 14px;
 }
 
 
-.event__gop {
+.event__geo {
     position: relative;
-    height: 235px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
-.event__geo__map {
-    margin-bottom: 5px;
-}
+    .event__geo__map {
+        margin-bottom: 5px;
+        height: 235px;
+    }
+
+    .event__geo__btn {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+
 
 .event__date {
     margin-bottom: 20px;
@@ -172,10 +182,13 @@
 
 
 .event__date {
+    @extend .clearfix;
     margin-bottom: 10px;
 }
 
 .event__date__title {
+    display: block;
+    margin-bottom: 10px;
     font-size: 20px;
 }
 
@@ -191,13 +204,16 @@
 
 
 
-
+.event__contact {
+    margin-top: 25px;
+}
 .event__contact__title {
+    margin-bottom: 10px;
     font-size: 20px;
 }
 
 .event__contact__img {
-    margin-right: 5px;
+    margin-right: 10px;
     float: left;
 }
 
@@ -208,3 +224,18 @@
 //.event__contact__link-avtor {
 //    color: $c-blue;
 //}
+
+.page__friend {
+    @extend .clearfix;
+    padding: 15px 17% * 100 / $widthPage;
+}
+
+.page__my_events {
+    @extend .clearfix;
+    padding: 30px 38% * 100 / $widthPage  17% * 100 / $widthPage;
+}
+
+.page__my_events__item {
+    width: 235% * 100 / 900;
+    margin: 0 3.5% 50px;
+}

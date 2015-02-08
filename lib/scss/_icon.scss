@@ -1,0 +1,15 @@
+@import "compass/utilities/sprites";
+
+$i-spacing: 20px;
+$i-sprite-dimensions: true;
+
+
+@import "i/*.png";
+@include all-i-sprites;
+
+
+i {
+    display: inline-block;
+    vertical-align: middle;
+}
+

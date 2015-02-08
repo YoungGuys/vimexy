@@ -16,7 +16,7 @@
                 <form class="header__login" action="<?=SITE?>User/checkUser" method="get"">
 
                     <a href="" class="header__landing-link">Більше про нас</a>
-                    
+
                     <!-- Link to landing page -->
 
                     <input class="header__login__email" type="email" placeholder="  e-mail" name="email"/>
@@ -135,12 +135,13 @@
 
     <!-- BOTTOM SECTION -->
 
-    <section class="register__footer">
-        <div class="footer__items">
-            <p>&copy;Vimexy 2015</p>
-            <a href=""><i class="i-fb"/></a>
-            <a href=""><i class="i-vk"/></a>
+
+    <footer class="register__footer">
+        <div class="row">
+            <span>&copy;Vimexy 2015</span>
+            <a href=""><i class="i-fb-white"></i></a>
+            <a href=""><i class="i-vk-white"></i></a>
         </div>
-    </section>
+    </footer>
 
 </section>
