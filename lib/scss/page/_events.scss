@@ -1,5 +1,6 @@
 
 .page__filter {
+    height: 35px;
     line-height: 35px;
     padding: 0 38% * 100 / $widthPage 0 17% * 100 / $widthPage;
     border-bottom: 1px solid $c-grey;
@@ -225,14 +226,16 @@
 //}
 
 .page__friend {
+    @extend .clearfix;
     padding: 15px 17% * 100 / $widthPage;
 }
 
 .page__my_events {
-    @extend .page__filter;
+    @extend .clearfix;
+    padding: 30px 38% * 100 / $widthPage  17% * 100 / $widthPage;
 }
 
 .page__my_events__item {
-    margin: 20px 28px 50px;
-
+    width: 235% * 100 / 900;
+    margin: 0 3.5% 50px;
 }

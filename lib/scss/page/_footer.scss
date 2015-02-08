@@ -1,4 +1,4 @@
-.footer {
+footer {
     height: 45px;
     line-height: 45px;
     color: #fff;
@@ -6,6 +6,10 @@
 
     i {
         margin-left: 5px;
+    }
+
+    a {
+        display: inline-block;
     }
 
     span {
