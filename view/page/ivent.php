@@ -12,9 +12,17 @@
 
         <div class="event__col-1">
             <img class="event__pic" src="<?=$data->get('photo');    ?>" alt="event-img"/>
-
-            <a class="btn btn--green event__btn_add" href=""></a>
-
+            <?php if (!$balon) {?>
+                <a class="btn btn--green event__btn_add"
+                   href="<?=SITE."Events/addToMyList?id=".$data->getObjectId();?>">
+                    Долучитись
+                </a>
+            <?php } else { ?>
+                <a class="btn btn--green event__btn_add"
+                   href="<?=SITE."Events/deleteFromMyList?id=".$data->getObjectId();?>">
+                    Відлучитись
+                </a>
+            <?php } ?>
             <div class="event__descr">
                 <div class="event__descr__title">Опис</div>
                 <div class="event__descr__text">
@@ -39,8 +47,8 @@
             <div class="event__geo">
                 <div id="map" class="event__geo__map"></div>
                 <div class="btn btn--blue btn--full event__geo__btn js-location"
-                     data-lat="<?=$event->location->getLatitude()?>"
-                     data-lon="<?=$event->location->getLongitude()?>">
+                     data-lat="<?=$data->location->getLatitude()?>"
+                     data-lon="<?=$data->location->getLongitude()?>">
                     <i class="i-location"></i>
                     <span class="js-location-text"></span>
                 </div>

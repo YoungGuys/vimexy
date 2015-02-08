@@ -1,10 +1,10 @@
 <aside>
     <menu class="menu">
-        <a class="menu__item" href="#">
+        <a class="menu__item" href="<?=SITE?>Events/My">
             <i class="i-user-g"></i>
             Мій профіль
         </a>
-        <a class="menu__item" href="#">
+        <a class="menu__item" href="<?=SITE?>Events/My">
             <i class="i-hand-g"></i>
             Мої івенти
         </a>

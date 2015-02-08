@@ -123,7 +123,9 @@
                 <!-- BOX BOTTOM -->
 
                 <div class="registration__bottom">
-                  <div class="password__incorrect password__incorrec--active"><p>Паролі не співпадають</p></div>
+                    <?php if (!empty($_GET['error'])) {?>
+                        <div class="password__incorrect password__incorrec--active"><p>Паролі не співпадають</p></div>
+                    <?php } ?>
                   <p><input type="submit" class="btn btn--blue--regist" value="Продовжити"/></p>
                   <p><input type="reset" class="btn" value="відмінити"/></p>
                 </div>

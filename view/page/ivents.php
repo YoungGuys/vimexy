@@ -75,7 +75,13 @@
                         <i class="i-user"></i>
                         12
                     </p>
-                    <a class="btn btn--blue btn--full page__events__item__meta__btn" href="#">Хочу допомогти</a>
+                    <?php if (!$balon) { ?>
+                        <a class="btn btn--blue btn--full page__events__item__meta__btn"
+                           href="<?=SITE."Events/addToMyList?id=".$event->getObjectId();?>">Хочу допомогти</a>
+                    <?php } else {?>
+                        <a class="btn btn--blue btn--full page__events__item__meta__btn"
+                           href="<?=SITE."Events/deleteFromMyList?id=".$event->getObjectId();?>">Відлучитись</a>
+                    <?php } ?>
                 </div>
             </div>
         <?php } ?>

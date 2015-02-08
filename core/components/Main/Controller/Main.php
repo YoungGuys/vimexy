@@ -13,8 +13,14 @@ class Main {
     }
 
     public function index() {
-        $this->model->index();
-        $this->view->index();
+        $contr = new  User();
+        if (!$_COOKIE['auth']) {
+            $contr->registration();
+        }
+        else {
+            $contr = new Events();
+            $contr->index();
+        }
     }
 
 }

@@ -29,8 +29,9 @@ class User extends System\Model{
         $pass = $_GET['pass'];
         $email = $_GET['email'];
         try {
+            setcookie("auth",true,time() + 60*60*24);
             ParseUser::logIn($email, $pass);
-            header("Location:".SITE);
+            header("Location:".SITE."Events?access=true");
         } catch (ParseException $error) {
             echo "Bad pass";
         }
@@ -56,5 +57,6 @@ class User extends System\Model{
         $date->setDate($_GET['year'], intval($_GET['month']), $_GET['day']);
         $user->set("birthDate",$date);
         $user->signUp();
+        setcookie("auth",true,time() + 60*60*24*7);
     }
 }

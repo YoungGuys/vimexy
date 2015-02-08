@@ -8,6 +8,7 @@
 
 namespace Controller;
 use Balon\System;
+use Parse\ParseUser;
 
 class Events extends System\Controller{
 
@@ -20,6 +21,10 @@ class Events extends System\Controller{
 
     public function index()
     {
+        if ($_GET['access']) {
+            setcookie("auth",true,time() + 60*60*24*7);
+            setcookie("id",$_GET['id'],time() + 60*60*24*7);
+        }
         $data['data'] = $this->model->loadList();
         $this->view->loadList($data);
     }
@@ -28,4 +33,14 @@ class Events extends System\Controller{
         $data = $this->model->show();
         $this->view->show($data);
     }
+
+    public function addtomylist() {
+        $this->model->addToMyList();
+    }
+
+    public function My() {
+        $data = $this->model->myList();
+        $this->view->loadMyList($data);
+    }
+
 } 

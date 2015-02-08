@@ -38,6 +38,7 @@ class User extends System\Controller{
     public function addUser() {
         if ($_GET['password'] == $_GET['confirm']) {
             $this->model->addUser();
+            header("Location:".SITE."Events?access=true");
         }
         else {
             header("Location:".SITE."User/registration?error=1");//if password != confirm go to the registration

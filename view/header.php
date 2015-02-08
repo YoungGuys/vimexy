@@ -18,8 +18,8 @@
 
             <div class="header__info">
                 <div class="row">
-                    <button class="btn header__btn btn--big btn--blue">Хочу допомогти</button>
-                    <button class="btn header__btn btn--big btn--red">Шукаю допомоги</button>
+                    <button class="btn header__btn btn--big btn--blue"><a href="<?=SITE?>Events/">Хочу допомогти</a></button>
+                    <button class="btn header__btn btn--big btn--red"><a href="<?=SITE?>Events/">Шукаю допомоги</a></button>
                 </div>
             </div>
         </header>
