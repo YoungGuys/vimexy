@@ -315,16 +315,16 @@ i {
 .btn--red:hover {
   background: #e94c37;
 }
-/* line 29, ../scss/_button.scss */
+/* line 30, ../scss/_button.scss */
 .btn--blue {
   color: #fff;
   background: #76baeb;
 }
-/* line 33, ../scss/_button.scss */
+/* line 34, ../scss/_button.scss */
 .btn--blue:hover {
   background: #3398e1;
 }
-/* line 38, ../scss/_button.scss */
+/* line 39, ../scss/_button.scss */
 .btn--big {
   width: 180px;
   height: 32px;
@@ -333,18 +333,23 @@ i {
   text-align: center;
   font-size: 16px;
 }
-/* line 47, ../scss/_button.scss */
+/* line 48, ../scss/_button.scss */
 .btn--full {
   width: 100%;
   padding: 10px 0;
   text-align: center;
 }
-/* line 53, ../scss/_button.scss */
+/* line 54, ../scss/_button.scss */
 .btn-search {
   width: 100%;
   margin-left: 16%;
   padding: 3px 15px;
   font-size: 14px;
+}
+
+/* line 66, ../scss/_button.scss */
+.g-maps {
+  height: 500px;
 }
 
 /* line 1, ../scss/_screen.scss */
