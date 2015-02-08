@@ -43,11 +43,15 @@
 //    float: none
 
 .container {
-    @extend .clearfix;
-    max-width: 1154px;
-    margin: 0 auto;
+    @extend .row;
 
     border-left: 1px solid $c-grey;
     border-right: 1px solid $c-grey;
 }
 
+
+.row {
+    @extend .clearfix;
+    max-width: 1154px;
+    margin: 0 auto;
+}

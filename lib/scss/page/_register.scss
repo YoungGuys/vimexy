@@ -8,13 +8,6 @@
     @extend .clearfix
 }
 
-body,
-html {
-    height: 100%;
-    width: 100%;
-}
-
-
 
 /*--------------------------------\
          #HEADER SECTION
@@ -29,16 +22,16 @@ html {
     margin: 0 auto;
 }
 
-.header__login{
-    height: 100%;
-    width: 90%;
-    display: inline-block;
+.header__login {
+    @extend .row;
+    line-height: 40px;
     text-align: right;
 }
 
 .header__landing-link {
     width: 80%;
     margin-right: 2%;
+    color: #fff;
 }
 
 .header__landing-link:hover{
@@ -78,7 +71,6 @@ html {
 }
 
 .registration__box{
-    max-height: 440px;
     max-width: 550px;
     background-color: rgba(#fff, 0.8);
     margin: 5% auto;
@@ -93,14 +85,17 @@ h3{
 // FORM
 
 
-.registration__form{
+.registration__form {
     width: 100%;
-    dicplay: inline-block;
-    height: 80%;
+    padding-bottom: 10px;
 }
-.registration__form label {
-    display: block;
+
+.registration__title {
+    font-size: 20px;
 }
+//.registration__form label {
+//    display: block;
+//}
 
 .labelsex {
     display: inline !important;
@@ -159,14 +154,7 @@ option {
     padding: 5px;
 }
 
-.btn {
-    background: none;
-    border: none;
-}
-.btn:active,
-.btn:focus {
-    outline: none;
-}
+
 
 select option[default] {
     color: $c-grey;

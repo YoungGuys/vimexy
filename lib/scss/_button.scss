@@ -1,0 +1,33 @@
+$c-input: #AFAEAE;
+
+.btn {
+    color: #000;
+    background: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:active,
+    &:focus {
+        outline: none;
+    }
+
+    &--red {
+        color: #fff;
+        background: $c-red;
+    }
+
+    &--blue {
+        color: #fff;
+        background: $c-blue;
+    }
+
+    &--big {
+        width: 180px;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        font-size: 16px;
+    }
+}
+
