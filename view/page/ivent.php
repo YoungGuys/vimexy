@@ -37,35 +37,44 @@
         <div class="event__col-2">
 
             <div class="event__geo">
-                <div class="event__geo__map"></div>
-                <div class="btn event__geo__btn" data-lat="<?=$data->location->getLatitude()?>"
-                     data-lon="<?=$data->location->getLongitude()?>">
+                <div id="map" class="event__geo__map"></div>
+                <div class="btn btn--blue btn--full event__geo__btn js-location"
+                     data-lat="<?=$event->location->getLatitude()?>"
+                     data-lon="<?=$event->location->getLongitude()?>">
                     <i class="i-location"></i>
-                    Київ, вул. Матеюка 8
+                    <span class="js-location-text"></span>
                 </div>
             </div>
 
             <div class="event__date">
                 <time class="event__date__title"><?=$data->date;?></time>
                 <i class="i-calendar event__date__calendar"></i>
+
                 <div class="event__date__info">
-                    <span class="c-blue">з:</span> <?=$data->time_s;?>
-                    <span class="c-blue">до:</span> <?=$data->time_f;?>
+                    <p>
+                        <span class="c-blue">з:</span> <?=$data->time_s;?>
+                    </p>
+
+                    <p>
+                        <span class="c-blue">до:</span> <?=$data->time_f;?>
+                    </p>
                 </div>
             </div>
 
             <div class="event__contact">
                 <div class="event__contact__title">Контакти</div>
-                <img class="event__contact__img" src="<?=$user->get("photo");?>" alt="user-img"/>
+                <img class="event__contact__img" src="<?=$user->get('photo');?>" alt="user-img"/>
                 <div class="event__contact__info">
                     <p>
-                        <i class="i-tel"></i>
+                        <i class="i-tel-blue"></i>
                         <?php if ($user->get('phone')) echo $user->get('phone'); ?>
                     </p>
+
                     <p>
                         <i class="i-fb-blue"></i>
                         <?php if ($user->get('website')) echo $user->get('sebsite') ?>
                     </p>
+
                     <p>
                         <?php if ($user->get('email')) echo $user->get('email');?>
                     </p>
@@ -81,23 +90,23 @@
             <h6 class="profile__comment__title">Відгуки про мене</h6>
             <ul class="profile__comment__list">
                 <?php foreach ($comments as $key => $comment) { ?>
-                    <li class="profile__comment__list__item">
-                        <img class="profile__comment__list__item__avatar"
-                             src="<?=$commentsUser[$comment->get("authorID")->getObjectId()]->get("photo");?>"
-                             alt="avatar-user"/>
-                        <div class="profile__comment__list__item__info">
-                            <p class="profile__comment__list__item__name">
-                                <?=$commentsUser[$comment->get("authorID")->getObjectId()]->get("firstName")." ".$commentsUser[$comment->get("authorID")->getObjectId()]->get("lastName");?>
-                            </p>
-                            <time class="profile__comment__list__item__date"><?=$comment->date;?></time>
-                            <p class="profile__comment__list__item__text"><?=$comment->get('text')?></p>
-                        </div>
-                    </li>
+                <li class="profile__comment__list__item">
+                    <img class="profile__comment__list__item__avatar"
+                         src="<?=$commentsUser[$comment->get(" authorID")->getObjectId()]->get("photo");?>"
+                    alt="avatar-user"/>
+                    <div class="profile__comment__list__item__info">
+                        <p class="profile__comment__list__item__name">
+                            <?=$commentsUser[$comment->get("authorID")->getObjectId()]->get("firstName")."
+                            ".$commentsUser[$comment->get("authorID")->getObjectId()]->get("lastName");?>
+                        </p>
+                        <time class="profile__comment__list__item__date"><?=$comment->date;?></time>
+                        <p class="profile__comment__list__item__text"><?=$comment->get('text')?></p>
+                    </div>
+                </li>
                 <?php } ?>
             </ul>
 
         </div>
-
 
 
     </div>

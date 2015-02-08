@@ -29,7 +29,7 @@
         </div>
 
         <div class="page__filter__item page__filter__item--search">
-            <input type="submit"/>
+            <input class="btn btn--blue btn-search" value="Пошук" type="submit"/>
         </div>
     </form>
 

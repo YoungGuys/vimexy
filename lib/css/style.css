@@ -299,22 +299,23 @@ i {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  text-decoration: none;
 }
-/* line 12, ../scss/_button.scss */
+/* line 13, ../scss/_button.scss */
 .btn:active, .btn:focus {
   outline: none;
 }
-/* line 17, ../scss/_button.scss */
+/* line 18, ../scss/_button.scss */
 .btn--red {
   color: #fff;
   background: #EE7565;
 }
-/* line 22, ../scss/_button.scss */
+/* line 23, ../scss/_button.scss */
 .btn--blue {
   color: #fff;
   background: #76baeb;
 }
-/* line 27, ../scss/_button.scss */
+/* line 28, ../scss/_button.scss */
 .btn--big {
   width: 180px;
   height: 32px;
@@ -323,11 +324,18 @@ i {
   text-align: center;
   font-size: 16px;
 }
-/* line 36, ../scss/_button.scss */
+/* line 37, ../scss/_button.scss */
 .btn--full {
   width: 100%;
   padding: 10px 0;
   text-align: center;
+}
+/* line 43, ../scss/_button.scss */
+.btn-search {
+  width: 100%;
+  margin-left: 16%;
+  padding: 3px 15px;
+  font-size: 14px;
 }
 
 /* line 1, ../scss/_screen.scss */
@@ -1003,7 +1011,7 @@ select option[default] {
 .event__header {
   margin-bottom: 15px;
   padding: 0 3.90144% 0 1.74538%;
-  line-height: 36px;
+  line-height: 35px;
   border-bottom: 1px solid #7f7d7c;
 }
 

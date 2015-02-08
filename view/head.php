@@ -10,7 +10,12 @@
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
             <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
         <![endif]-->
-        <script src="/lib/js/jquery.js"></script>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="lib/js/jquery.js"><\/script>')</script>
+
+        <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+
         <script src="/lib/js/modal.js"></script>
         <script src="/lib/js/app.js"></script>
         <script src="/lib/js/admin.js"></script>

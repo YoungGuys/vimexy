@@ -8,6 +8,7 @@ $c-input: #AFAEAE;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    text-decoration: none;
 
     &:active,
     &:focus {
@@ -37,6 +38,13 @@ $c-input: #AFAEAE;
         width: 100%;
         padding: 10px 0;
         text-align: center;
+    }
+
+    &-search {
+        width: 100%;
+        margin-left: 16%;
+        padding: 3px 15px;
+        font-size: 14px;
     }
 }
 
