@@ -116,7 +116,7 @@ img {
 }
 
 /* line 55, ../scss/_base.scss */
-.animate, .skills__item__label, .modal_bg {
+.animate, .btn, .skills__item__label, .modal_bg {
   -webkit-transition: all .5s ease;
   -moz-transition: all .5s ease;
   -ms-transition: all .5s ease;
@@ -301,21 +301,30 @@ i {
   cursor: pointer;
   text-decoration: none;
 }
-/* line 13, ../scss/_button.scss */
+/* line 14, ../scss/_button.scss */
 .btn:active, .btn:focus {
   outline: none;
+  text-decoration: none;
 }
-/* line 18, ../scss/_button.scss */
+/* line 20, ../scss/_button.scss */
 .btn--red {
   color: #fff;
   background: #EE7565;
 }
-/* line 23, ../scss/_button.scss */
+/* line 24, ../scss/_button.scss */
+.btn--red:hover {
+  background: #e94c37;
+}
+/* line 29, ../scss/_button.scss */
 .btn--blue {
   color: #fff;
   background: #76baeb;
 }
-/* line 28, ../scss/_button.scss */
+/* line 33, ../scss/_button.scss */
+.btn--blue:hover {
+  background: #3398e1;
+}
+/* line 38, ../scss/_button.scss */
 .btn--big {
   width: 180px;
   height: 32px;
@@ -324,13 +333,13 @@ i {
   text-align: center;
   font-size: 16px;
 }
-/* line 37, ../scss/_button.scss */
+/* line 47, ../scss/_button.scss */
 .btn--full {
   width: 100%;
   padding: 10px 0;
   text-align: center;
 }
-/* line 43, ../scss/_button.scss */
+/* line 53, ../scss/_button.scss */
 .btn-search {
   width: 100%;
   margin-left: 16%;
@@ -367,46 +376,52 @@ aside {
 }
 /* line 31, ../scss/_screen.scss */
 .menu__item i {
-  width: 25px;
-  margin-right: 15px;
+  width: 30px;
+  margin-right: 10px;
+}
+@media screen and (max-width: 1200px) {
+  /* line 37, ../scss/_screen.scss */
+  .menu__item i {
+    margin-right: -4px;
+  }
 }
 
-/* line 40, ../scss/_screen.scss */
+/* line 46, ../scss/_screen.scss */
 .history {
   margin-top: 60px;
 }
 
-/* line 44, ../scss/_screen.scss */
+/* line 50, ../scss/_screen.scss */
 .history__title {
   margin-bottom: 12px;
   text-align: center;
   font-size: 14px;
 }
 
-/* line 50, ../scss/_screen.scss */
+/* line 56, ../scss/_screen.scss */
 .history__list {
   margin: 0 5px 5px 11%;
 }
 
-/* line 54, ../scss/_screen.scss */
+/* line 60, ../scss/_screen.scss */
 .history__list__item {
   min-height: 50px;
   padding-bottom: 10px;
   padding-left: 18px;
   border-left: 2px solid #969594;
 }
-/* line 60, ../scss/_screen.scss */
+/* line 66, ../scss/_screen.scss */
 .history__list__item:last-child {
   border-left: 2px solid transparent;
 }
 
-/* line 65, ../scss/_screen.scss */
+/* line 71, ../scss/_screen.scss */
 .history__list__item__date {
   position: relative;
   color: #969594;
   font-size: 14px;
 }
-/* line 70, ../scss/_screen.scss */
+/* line 76, ../scss/_screen.scss */
 .history__list__item__date:before {
   content: ' ';
   position: absolute;
@@ -419,13 +434,13 @@ aside {
   border-radius: 100%;
 }
 
-/* line 84, ../scss/_screen.scss */
+/* line 90, ../scss/_screen.scss */
 .history__list__item__title {
   color: #AFAEAE;
   font-size: 13px;
 }
 
-/* line 100, ../scss/_screen.scss */
+/* line 106, ../scss/_screen.scss */
 .page {
   width: 84.40208%;
   float: left;
@@ -433,36 +448,36 @@ aside {
   border-left: 1px solid #7f7d7c;
 }
 
-/* line 113, ../scss/_screen.scss */
+/* line 119, ../scss/_screen.scss */
 .skills {
   text-align: center;
   padding: 0 5%;
 }
 
-/* line 117, ../scss/_screen.scss */
+/* line 123, ../scss/_screen.scss */
 .skills__item {
   width: 70px;
   height: 70px;
   display: inline-block;
   margin: 15px 14px;
 }
-/* line 124, ../scss/_screen.scss */
+/* line 130, ../scss/_screen.scss */
 .skills__item input[type="checkbox"] {
   display: none;
 }
-/* line 127, ../scss/_screen.scss */
+/* line 133, ../scss/_screen.scss */
 .skills__item input[type="checkbox"]:checked + .skills__item__label {
   opacity: 1;
 }
 
-/* line 133, ../scss/_screen.scss */
+/* line 139, ../scss/_screen.scss */
 .skills__item__label {
   overflow: hidden;
   opacity: .5;
   border-radius: 100%;
   cursor: pointer;
 }
-/* line 140, ../scss/_screen.scss */
+/* line 146, ../scss/_screen.scss */
 .skills__item__label:hover {
   opacity: 0.75;
 }

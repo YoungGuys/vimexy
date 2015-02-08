@@ -54,7 +54,6 @@
                     <p>
                         <span class="c-blue">з:</span> <?=$data->time_s;?>
                     </p>
-
                     <p>
                         <span class="c-blue">до:</span> <?=$data->time_f;?>
                     </p>

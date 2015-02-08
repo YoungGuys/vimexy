@@ -9,20 +9,30 @@ $c-input: #AFAEAE;
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
+    @extend .animate;
 
     &:active,
     &:focus {
         outline: none;
+        text-decoration: none;
     }
 
     &--red {
         color: #fff;
         background: $c-red;
+
+        &:hover {
+            background: darken($c-red, 10%);
+        }
     }
 
     &--blue {
         color: #fff;
         background: $c-blue;
+        
+        &:hover {
+            background: darken($c-blue, 15%);
+        }
     }
 
     &--big {
