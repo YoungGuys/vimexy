@@ -6,10 +6,6 @@
     <section class="register__header">
             <div class="header__login">
 
-
-
-
-
                 <!-- Form itself -->
 
                 <form class="header__login" action="<?=SITE?>User/checkUser" method="get"">
