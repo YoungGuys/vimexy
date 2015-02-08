@@ -66,7 +66,8 @@
                         <?=$event->date ?> <?php if ($event->finishDate) echo "- ".$event->finishDate; ?>
                         <?=$event->time?>
                     </time>
-                    <p class="page__events__item__meta__adress">
+                    <p class="page__events__item__meta__adress" data-lat="<?=$event->location->getLatitude()?>"
+                        data-lon="<?=$event->location->getLongitude()?>">
                         <i class="i-location-mini"></i>
                         Київ, вул. Мілютенко 38
                     </p>

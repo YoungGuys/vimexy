@@ -38,7 +38,8 @@
 
             <div class="event__geo">
                 <div class="event__geo__map"></div>
-                <div class="btn event__geo__btn">
+                <div class="btn event__geo__btn" data-lat="<?=$data->location->getLatitude()?>"
+                     data-lon="<?=$data->location->getLongitude()?>">
                     <i class="i-location"></i>
                     Київ, вул. Матеюка 8
                 </div>
@@ -81,11 +82,15 @@
             <ul class="profile__comment__list">
                 <?php foreach ($comments as $key => $comment) { ?>
                     <li class="profile__comment__list__item">
-                        <img class="profile__comment__list__item__avatar" src="" alt="avatar-user"/>
+                        <img class="profile__comment__list__item__avatar"
+                             src="<?=$commentsUser[$comment->get("authorID")->getObjectId()]->get("photo");?>"
+                             alt="avatar-user"/>
                         <div class="profile__comment__list__item__info">
-                            <p class="profile__comment__list__item__name"><?=$commentsUser->get($comment->get("authorID")->getObjectId())?></p>
-                            <time class="profile__comment__list__item__date">07.02.15</time>
-                            <p class="profile__comment__list__item__text">jkdfgfbfdgfdbghbgdfhj</p>
+                            <p class="profile__comment__list__item__name">
+                                <?=$commentsUser[$comment->get("authorID")->getObjectId()]->get("firstName")." ".$commentsUser[$comment->get("authorID")->getObjectId()]->get("lastName");?>
+                            </p>
+                            <time class="profile__comment__list__item__date"><?=$comment->date;?></time>
+                            <p class="profile__comment__list__item__text"><?=$comment->get('text')?></p>
                         </div>
                     </li>
                 <?php } ?>
