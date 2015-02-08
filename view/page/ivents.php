@@ -1,7 +1,7 @@
 <section class="page">
 
 
-    <form class="page__filter">
+    <form class="page__filter" action="<?=SITE?>Events" method="get">
         <div class="page__filter__item">
             <select class="page__filter__item__select" name="">
                 <option selected disabled>Місто</option>
@@ -15,9 +15,10 @@
             </select>
         </div>
         <div class="page__filter__item">
-            <select class="page__filter__item__select" name="">
-                <option selected disabled>Організація</option>
-                <option value="1">1</option>
+            <select class="page__filter__item__select" name="organizer">
+                <?php foreach ($organizationList as $key => $org) { ?>
+                    <option value="<?=$org->getObjectId();?>"><?=$org->get("name");?></option>
+                <?php } ?>
             </select>
         </div>
         <div class="page__filter__item">
@@ -28,7 +29,7 @@
         </div>
 
         <div class="page__filter__item page__filter__item--search">
-            <input type="search" name="Пошук"/>
+            <input type="submit"/>
         </div>
     </form>
 
@@ -41,7 +42,11 @@
                     <img class="page__events__item__pic__img" src="<?=$event->get('photo');?>" alt="event-img"/>
                 </div>
                 <div class="page__events__item__info">
-                    <h4 class="page__events__item__info__title"><?=$event->get('title');?></h4>
+                    <h4 class="page__events__item__info__title">
+                        <a href="<?=SITE?>Events/show?id=<?=$event->getObjectId();?>">
+                            <?=$event->get('title');?>
+                        </a>
+                    </h4>
                     <p class="page__events__item__info__text"><?=$event->get('about');?></p>
                     <div class="page__events__item__info__filter">
                         <div class="page__events__item__info__filter__item"></div>
@@ -57,7 +62,10 @@
                     </p>
                 </div>
                 <div class="page__events__item__meta">
-                    <time class="page__events__item__meta__date">4 лютого 2015 р. - 6 лютого 2015 р.</time>
+                    <time class="page__events__item__meta__date">
+                        <?=$event->date ?> <?php if ($event->finishDate) echo "- ".$event->finishDate; ?>
+                        <?=$event->time?>
+                    </time>
                     <p class="page__events__item__meta__adress">
                         <i class="i-location-mini"></i>
                         Київ, вул. Мілютенко 38

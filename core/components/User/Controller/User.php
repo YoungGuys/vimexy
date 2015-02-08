@@ -37,25 +37,7 @@ class User extends System\Controller{
 
     public function addUser() {
         if ($_GET['password'] == $_GET['confirm']) {
-            $user = new ParseUser();
-            $user->set("username", $_GET['email']);
-            $user->set("password", $_GET['password']);
-            $user->set("email", $_GET['email']);
-            $user->set("firstName", $_GET['name']);
-            $user->set("lastName", $_GET['lastname']);
-
-            if ($_GET['sex'] == "man") {
-                $user->set("gender", "M");
-            } elseif ($_GET['sex'] == "girl") {
-                $user->set("gender", "F");
-            }
-
-            $user->set("city", $_GET['city']);
-
-            $date = new \DateTime();
-            $date->setDate($_GET['year'], intval($_GET['month']), $_GET['day']);
-            $user->set("birthDate",$date);
-            $user->signUp();
+            $this->model->addUser();
         }
         else {
             header("Location:".SITE."User/registration?error=1");//if password != confirm go to the registration
