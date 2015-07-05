@@ -2,23 +2,22 @@
 
 
     <div class="profile">
-        <h2 class="profile__title">Олена Іванова</h2>
+        <h2 class="profile__title"><?=$data['firstName']?> <?=$data['lastName']?></h2>
 
 
         <div class="profile__col-1">
 
             <div class="profile__user">
-                <img class="profile__avatar" src="http://placekitten.com/g/200/250" alt="avatar-img"/>
+                <img class="profile__avatar" src="<?=$data['photo']?>" alt="avatar-img"/>
                 <button class="btn btn--full btn--blue">В проекті</button>
                 <p class="profile__user__adress">
                     <i class="i-user"></i>
-                    Київ / 15.11.1994
+                    <?=$data['city']?> / <?=$data['birthday']?>
                 </p>
 
                 <div class="profile__user__tel">
                     <i class="i-tel-blue "></i>
-                    <p class="profile__user__tel__item">093434343</p>
-                    <p class="profile__user__tel__item">345345435</p>
+                    <!--<p class="profile__user__tel__item"><?/*=$data['phone']*/?></p>-->
                 </div>
             </div>
 
@@ -75,24 +74,13 @@
             <div class="profile__gallery">
                 <h5 class="profile__title">Галерея проектів</h5>
                 <ul class="profile__gallery__list">
-                    <li class="profile__gallery__list__item">
-                        <img src="http://placekitten.com/g/150/150" alt=""/>
-                    </li>
-                    <li class="profile__gallery__list__item">
-                        <img src="http://placekitten.com/g/150/150" alt=""/>
-                    </li>
-                    <li class="profile__gallery__list__item">
-                        <img src="http://placekitten.com/g/150/150" alt=""/>
-                    </li>
-                    <li class="profile__gallery__list__item">
-                        <img src="http://placekitten.com/g/150/150" alt=""/>
-                    </li>
-                    <li class="profile__gallery__list__item">
-                        <img src="http://placekitten.com/g/150/150" alt=""/>
-                    </li>
-                    <li class="profile__gallery__list__item">
-                        <img src="http://placekitten.com/g/150/150" alt=""/>
-                    </li>
+                    <?php foreach ($events as $key => $event) { ?>
+                        <li class="profile__gallery__list__item">
+                            <a href="<?=SITE?>Events/show?id=<?=$event->getObjectId();?>">
+                                <img src="<?=$event->get('photo');?>" alt=""/>
+                            </a>
+                        </li>
+                    <?php } ?>
                 </ul>
             </div>
 

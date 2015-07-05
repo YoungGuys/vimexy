@@ -40,7 +40,7 @@ class Events extends System\View{
         $this->loadHeader();
         include('view/open_page.php');
         include('view/page/navigation.php');
-        include('view/page/ivents.php');
+        include('view/page/my_events.php');
         include('view/close_page.php');
         $this->loadFooter();
         $this->loadModal();
@@ -56,6 +56,18 @@ class Events extends System\View{
         include('view/open_page.php');
         include('view/page/navigation.php');
         include('view/page/ivent.php');
+        include('view/close_page.php');
+        $this->loadFooter();
+        $this->loadModal();
+    }
+
+    public function loadMap($data)
+    {
+        $this->loadHead();
+        $this->loadHeader();
+        include('view/open_page.php');
+        include('view/page/navigation.php');
+        include('view/page/maps.php');
         include('view/close_page.php');
         $this->loadFooter();
         $this->loadModal();

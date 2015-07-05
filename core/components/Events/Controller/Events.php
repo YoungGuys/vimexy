@@ -43,4 +43,10 @@ class Events extends System\Controller{
         $this->view->loadMyList($data);
     }
 
+    public function showMap()
+    {
+        $data = $this->model->map();
+        $this->view->loadMap($data);
+    }
+
 } 
