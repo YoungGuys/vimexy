@@ -6,7 +6,7 @@ $c-input: #AFAEAE;
     color: #000;
     background: none;
     border: none;
-    border-radius: 5px;
+    //border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
     @extend .animate;
@@ -53,9 +53,13 @@ $c-input: #AFAEAE;
 
     &-search {
         width: 100%;
-        margin-left: 16%;
-        padding: 3px 15px;
+        padding: 0;
+        height: 25px;
+        vertical-align: middle;
+        line-height: 25px;
+        background: #3E4649;
         font-size: 14px;
+        font-weight: 300;
     }
 }
 

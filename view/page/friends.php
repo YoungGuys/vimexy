@@ -4,25 +4,25 @@
     <form class="page__filter">
         <div class="page__filter__item">
             <select class="page__filter__item__select" name="">
-                <option selected disabled>Місто</option>
+                <option selected="selected" disabled="disabled">Місто</option>
                 <option value="1">1</option>
             </select>
         </div>
         <div class="page__filter__item">
             <select class="page__filter__item__select" name="">
-                <option selected disabled>Місяць</option>
+                <option selected="selected" disabled="disabled">Місяць</option>
                 <option value="1">1</option>
             </select>
         </div>
         <div class="page__filter__item">
             <select class="page__filter__item__select" name="">
-                <option selected disabled>Організація</option>
+                <option selected="selected" disabled="disabled">Організація</option>
                 <option value="1">1</option>
             </select>
         </div>
         <div class="page__filter__item">
             <select class="page__filter__item__select" name="">
-                <option selected disabled>15</option>
+                <option selected="selected" disabled="disabled">15</option>
                 <option value="1">1</option>
             </select>
         </div>

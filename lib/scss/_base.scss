@@ -14,7 +14,6 @@ $base-line-height: 16px !global;
 $rhythm-unit: rem !global;
 $rem-with-px-fallback: true !global;
 
-
 @include establish-baseline;
 
 html,

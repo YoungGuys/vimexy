@@ -1,7 +1,7 @@
 
 <footer class="footer">
     <div class="row">
-        <span>&copy;Vimexy 2015</span>
+        <span>&copy;ForSocial 2015</span>
         <a href="#">
             <i class="i-fb-white"></i>
         </a>

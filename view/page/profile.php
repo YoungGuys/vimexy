@@ -8,18 +8,18 @@
         <div class="profile__col-1">
 
             <div class="profile__user">
-                <img class="profile__avatar" src="" alt="avatar-img"/>
-                <button class="btn btn--red">В проекті</button>
+                <img class="profile__avatar" src="http://placekitten.com/g/200/250" alt="avatar-img"/>
+                <button class="btn btn--full btn--blue">В проекті</button>
                 <p class="profile__user__adress">
-                    <i class="i-user2"></i>
+                    <i class="i-user"></i>
                     Київ / 15.11.1994
                 </p>
 
-                <p class="profile__user__tel">
-                    <i class="i-tel"></i>
-                    <span class="profile__user__tel__item">093434343</span>
-                    <span class="profile__user__tel__item">345345435</span>
-                </p>
+                <div class="profile__user__tel">
+                    <i class="i-tel-blue "></i>
+                    <p class="profile__user__tel__item">093434343</p>
+                    <p class="profile__user__tel__item">345345435</p>
+                </div>
             </div>
 
             <nav class="history">
@@ -68,10 +68,42 @@
 
         <div class="profile__col-2">
 
+            <div class="profile__info">
+                
+            </div>
+
+            <div class="profile__gallery">
+                <h5 class="profile__title">Галерея проектів</h5>
+                <ul class="profile__gallery__list">
+                    <li class="profile__gallery__list__item">
+                        <img src="http://placekitten.com/g/150/150" alt=""/>
+                    </li>
+                    <li class="profile__gallery__list__item">
+                        <img src="http://placekitten.com/g/150/150" alt=""/>
+                    </li>
+                    <li class="profile__gallery__list__item">
+                        <img src="http://placekitten.com/g/150/150" alt=""/>
+                    </li>
+                    <li class="profile__gallery__list__item">
+                        <img src="http://placekitten.com/g/150/150" alt=""/>
+                    </li>
+                    <li class="profile__gallery__list__item">
+                        <img src="http://placekitten.com/g/150/150" alt=""/>
+                    </li>
+                    <li class="profile__gallery__list__item">
+                        <img src="http://placekitten.com/g/150/150" alt=""/>
+                    </li>
+                </ul>
+            </div>
+
             <div class="profile__filters">
 
                 <div class="profile__filters__skill">
-                    <h6 class="profile__filters__skill__title">Інтереси</h6>
+                    <h6 class="profile__title">Інтереси</h6>
+                    <div class="profile__filters__skill__item"></div>
+                    <div class="profile__filters__skill__item"></div>
+                    <div class="profile__filters__skill__item"></div>
+                    <div class="profile__filters__skill__item"></div>
                     <div class="profile__filters__skill__item"></div>
                     <div class="profile__filters__skill__item"></div>
                     <div class="profile__filters__skill__item"></div>
@@ -79,7 +111,11 @@
                 </div>
 
                 <div class="profile__filters__skill">
-                    <h6 class="profile__filters__skill__title">Інтереси</h6>
+                    <h6 class="profile__title">Інтереси</h6>
+                    <div class="profile__filters__skill__item"></div>
+                    <div class="profile__filters__skill__item"></div>
+                    <div class="profile__filters__skill__item"></div>
+                    <div class="profile__filters__skill__item"></div>
                     <div class="profile__filters__skill__item"></div>
                     <div class="profile__filters__skill__item"></div>
                     <div class="profile__filters__skill__item"></div>

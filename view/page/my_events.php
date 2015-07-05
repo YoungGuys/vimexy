@@ -5,12 +5,12 @@
 
 
 
-    <div class="page__my_events">
+    <article class="page__my_events">
 
-        <div class="page__my_events__item page__my_events__item--complete">
+        <a href="" class="page__my_events__item is-complete">
             <img class="page__my_events__item__img" src="" alt="event-photo"/>
             <p class="page__my_events__item__title">Збір допомоги для АТО</p>
-        </div>
+        </a>
 
         <div class="page__my_events__item">
             <img class="page__my_events__item__img" src="" alt="event-photo"/>
@@ -27,6 +27,6 @@
             <p class="page__my_events__item__title">Збір допомоги для АТО</p>
         </div>
 
-    </div>
+    </article>
 
 </section>
