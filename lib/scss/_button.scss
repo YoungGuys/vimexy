@@ -61,6 +61,18 @@ $c-input: #AFAEAE;
         font-size: 14px;
         font-weight: 300;
     }
+
+    &--black {
+        background: #3E4649;
+    }
+
+    &--transp {
+        padding: 5px 20px;
+        font-size: 16px;
+        background: transparent;
+        border: 2px solid #fff;
+    }
+
 }
 
 

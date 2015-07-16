@@ -100,6 +100,7 @@
 
 .profile__comment {
     padding: 10px 50% * 100 / 898;
+    clear: both;
 
 }
 .profile__comment__title {
@@ -133,6 +134,48 @@
 
 .profile__comment__list__item__text {
     margin-top: 20px;
-    font-style: 12px;
+    font-size: 12px;
 }
 
+
+
+.profile__info {
+    @extend .clearfix;
+}
+
+.profile__info__item {
+    width: 33.33%;
+    float: left;
+    text-align: center;
+}
+
+.profile__info__item__title {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.rating {
+    position: relative;
+    width: 80%;
+    height: 12px;
+    overflow: hidden;
+    color: #DC914A;
+    border-radius: 5px;
+
+    border: 1px solid #666A6F;
+
+    > span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background: #DC914A;
+    }
+}
+
+.profile__info__item__num {
+    color: #DC914A;
+    display: inline-block;
+    font-size: 36px;
+    font-weight: 700;
+}

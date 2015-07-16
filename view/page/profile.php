@@ -11,12 +11,12 @@
                 <img class="profile__avatar" src="http://placekitten.com/g/200/250" alt="avatar-img"/>
                 <button class="btn btn--full btn--blue">В проекті</button>
                 <p class="profile__user__adress">
-                    <i class="i-user"></i>
+                    <i class="i-user"> </i>
                     Київ / 15.11.1994
                 </p>
 
                 <div class="profile__user__tel">
-                    <i class="i-tel-blue "></i>
+                    <i class="i-tel-blue "> </i>
                     <p class="profile__user__tel__item">093434343</p>
                     <p class="profile__user__tel__item">345345435</p>
                 </div>
@@ -73,6 +73,21 @@
             </div>
 
             <div class="profile__gallery">
+                <ul class="profile__info">
+                   <li class="profile__info__item">
+                       <p class="profile__info__item__title">Рейтинг</p>
+                       <i data-num="56" class="rating js-rating"><span></span></i>
+                   </li>
+                   <li class="profile__info__item">
+                       <p class="profile__info__item__title">Соціально активних годин:</p>
+                       <span class="profile__info__item__num">248</span>
+                   </li>
+                   <li class="profile__info__item">
+                       <p class="profile__info__item__title">Кількість годин:</p>
+                       <span class="profile__info__item__num">9</span>
+                   </li>
+                </ul>
+
                 <h5 class="profile__title">Галерея проектів</h5>
                 <ul class="profile__gallery__list">
                     <li class="profile__gallery__list__item">
