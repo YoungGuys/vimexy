@@ -46,4 +46,15 @@ class User extends System\Controller{
         }
     }
 
+    public function show()
+    {
+        $data = $this->model->show();
+        $this->view->show($data);
+    }
+
+    public function friends()
+    {
+        $this->view->friends();
+    }
+
 } 

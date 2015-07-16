@@ -189,7 +189,8 @@ class Events extends System\Model{
         header("Location:".SITE."Events/My");
     }
 
-    public function myList() {
+    public function myList($idUser = false) {
+        if (!$idUser) $idUser = ParseUser::getCurrentUser()->getObjectId();
         $q = new ParseQuery("Organization");
         $organizationList = $q->find();
 
@@ -216,7 +217,7 @@ class Events extends System\Model{
             $q->equalTo("organizerOID",$user->get($_GET['organizer']));
         }
         //echo ParseUser::getCurrentUser()->getObjectId();
-        $q->equalTo("participants",ParseUser::getCurrentUser()->getObjectId());
+        $q->equalTo("participants",$idUser);
         $q->limit(5);
         $data = $q->find();
         foreach ($data as $key => $event) {
@@ -271,6 +272,10 @@ class Events extends System\Model{
         return $data;
     }
 
+    function map() {
+        $data = $this->loadList();
+        return $data;
+    }
 
 
 }
