@@ -68,7 +68,20 @@
         <div class="profile__col-2">
 
             <div class="profile__info">
-                
+                <ul class="profile__info">
+                    <li class="profile__info__item">
+                        <p class="profile__info__item__title">Рейтинг</p>
+                        <i data-num="56" class="rating js-rating"><span></span></i>
+                    </li>
+                    <li class="profile__info__item">
+                        <p class="profile__info__item__title">Соціально активних годин:</p>
+                        <span class="profile__info__item__num">248</span>
+                    </li>
+                    <li class="profile__info__item">
+                        <p class="profile__info__item__title">Кількість годин:</p>
+                        <span class="profile__info__item__num">9</span>
+                    </li>
+                </ul>
             </div>
 
             <div class="profile__gallery">
@@ -99,7 +112,7 @@
                 </div>
 
                 <div class="profile__filters__skill">
-                    <h6 class="profile__title">Інтереси</h6>
+                    <h6 class="profile__title">Навички</h6>
                     <div class="profile__filters__skill__item"></div>
                     <div class="profile__filters__skill__item"></div>
                     <div class="profile__filters__skill__item"></div>
@@ -112,22 +125,19 @@
 
             </div>
 
-            <div class="profile__rating">
-                <h6 class="profile__rating__title">Мій рейтинг</h6>
-                <ul class="profile__rating__stars">
-                    <li class="profile__rating__stars__item"></li>
-                    <li class="profile__rating__stars__item"></li>
-                    <li class="profile__rating__stars__item"></li>
-                    <li class="profile__rating__stars__item"></li>
-                    <li class="profile__rating__stars__item"></li>
-                </ul>
-                <div class="profile__rating__bar"></div>
-                <div class="profile__rating__bar"></div>
-                <div class="profile__rating__bar"></div>
-            </div>
+            <!--<div class="profile__rating">-->
+                <!--<h6 class="profile__rating__title">Мій рейтинг</h6>-->
+                <!--<ul class="profile__rating__stars">-->
+                    <!--<li class="profile__rating__stars__item"> </li>-->
+                <!--</ul>-->
+                <!--<div class="profile__rating__bar"></div>-->
+                <!--<div class="profile__rating__bar"></div>-->
+                <!--<div class="profile__rating__bar"></div>-->
+            <!--</div>-->
 
             <div class="profile__comment">
                 <h6 class="profile__comment__title">Відгуки про мене</h6>
+
                 <ul class="profile__comment__list">
                     <li class="profile__comment__list__item">
                         <img class="profile__comment__list__item__avatar" src="" alt="avatar-user"/>
@@ -137,7 +147,16 @@
                             <p class="profile__comment__list__item__text">jkdfgfbfdgfdbghbgdfhj</p>
                         </div>
                     </li>
+                    <li class="profile__comment__list__item">
+                        <img class="profile__comment__list__item__avatar" src="" alt="avatar-user"/>
+                        <div class="profile__comment__list__item__info">
+                            <p class="profile__comment__list__item__name">Бред Пит</p>
+                            <time class="profile__comment__list__item__date">07.02.15</time>
+                            <p class="profile__comment__list__item__text">jkdfgfbfdgfdbghbgdfhj</p>
+                        </div>
+                    </li>
                 </ul>
+
             </div>
 
 

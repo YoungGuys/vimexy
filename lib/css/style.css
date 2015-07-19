@@ -797,7 +797,7 @@ select option[default] {
 
 /* line 9, ../scss/page/_profile.scss */
 .profile__col-1 {
-  width: 20.04454%;
+  width: 24.49889%;
   float: left;
   padding: 20px 1.67038%;
   box-sizing: border-box;
@@ -805,49 +805,50 @@ select option[default] {
 
 /* line 19, ../scss/page/_profile.scss */
 .profile__col-2 {
-  width: 79.95546%;
+  width: 72.16036%;
+  margin-left: 3%;
   float: left;
 }
 
-/* line 24, ../scss/page/_profile.scss */
+/* line 25, ../scss/page/_profile.scss */
 .profile__avatar {
   width: 100%;
   margin-bottom: 10px;
 }
 
-/* line 29, ../scss/page/_profile.scss */
+/* line 30, ../scss/page/_profile.scss */
 .profile__user {
   font-size: 13px;
 }
 
-/* line 33, ../scss/page/_profile.scss */
+/* line 34, ../scss/page/_profile.scss */
 .profile__user__adress {
   margin: 12px 0;
 }
 
-/* line 37, ../scss/page/_profile.scss */
+/* line 38, ../scss/page/_profile.scss */
 .profile__user__tel__item {
   margin-bottom: 4px;
 }
 
-/* line 42, ../scss/page/_profile.scss */
+/* line 43, ../scss/page/_profile.scss */
 .profile__filters {
-  padding: 10px 5.56793%;
+  padding: 10px 0;
 }
 
-/* line 48, ../scss/page/_profile.scss */
+/* line 50, ../scss/page/_profile.scss */
 .profile__filters__skill {
   width: 50%;
   float: left;
 }
 
-/* line 53, ../scss/page/_profile.scss */
+/* line 55, ../scss/page/_profile.scss */
 .profile__title {
   padding-bottom: 10px;
   font-size: 20px;
 }
 
-/* line 58, ../scss/page/_profile.scss */
+/* line 60, ../scss/page/_profile.scss */
 .profile__filters__skill__item {
   width: 50px;
   height: 50px;
@@ -859,92 +860,102 @@ select option[default] {
   border: 1px solid #969594;
 }
 
-/* line 71, ../scss/page/_profile.scss */
+/* line 73, ../scss/page/_profile.scss */
 .profile__rating {
   padding: 10px 5.56793%;
   border-bottom: 1px solid #7f7d7c;
 }
 
-/* line 76, ../scss/page/_profile.scss */
+/* line 78, ../scss/page/_profile.scss */
 .profile__rating__title {
   padding: 0 3.90144% 0 1.74538% 5px;
 }
 
-/* line 85, ../scss/page/_profile.scss */
+/* line 87, ../scss/page/_profile.scss */
 .profile__gallery__list {
   padding: 10px 0;
   border-top: 1px solid #AFAEAE;
   border-bottom: 1px solid #AFAEAE;
 }
 
-/* line 92, ../scss/page/_profile.scss */
+/* line 94, ../scss/page/_profile.scss */
 .profile__gallery__list__item {
   width: 17%;
   margin: 0 1.5%;
   float: left;
 }
 
-/* line 101, ../scss/page/_profile.scss */
+/* line 103, ../scss/page/_profile.scss */
 .profile__comment {
-  padding: 10px 5.56793%;
+  padding: 10px 0;
   clear: both;
 }
 
-/* line 106, ../scss/page/_profile.scss */
+/* line 109, ../scss/page/_profile.scss */
 .profile__comment__title {
-  padding: 0 3.90144% 0 1.74538% 5px;
-}
-
-/* line 110, ../scss/page/_profile.scss */
-.profile__comment__list__item {
-  padding: 10px;
-  margin-bottom: 20px;
+  padding: 0 0 18px;
+  font-size: 21px;
 }
 
 /* line 115, ../scss/page/_profile.scss */
+.profile__comment__list__item {
+  padding: 10px;
+  margin-bottom: 20px;
+  color: #48433D;
+  border: 1px solid #afaeae;
+}
+
+/* line 122, ../scss/page/_profile.scss */
 .profile__comment__list__item__avatar {
   width: 50px;
   float: left;
   margin-right: 10px;
 }
 
-/* line 121, ../scss/page/_profile.scss */
+/* line 128, ../scss/page/_profile.scss */
 .profile__comment__list__item__info {
   overflow: hidden;
 }
 
-/* line 125, ../scss/page/_profile.scss */
+/* line 132, ../scss/page/_profile.scss */
 .profile__comment__list__item__name {
   float: left;
-  font-size: 13px;
-}
-
-/* line 130, ../scss/page/_profile.scss */
-.profile__comment__list__item__date {
-  float: right;
+  color: #7f7d7c;
   font-size: 14px;
 }
 
-/* line 135, ../scss/page/_profile.scss */
+/* line 138, ../scss/page/_profile.scss */
+.profile__comment__list__item__date {
+  float: right;
+  color: #969594;
+  font-size: 14px;
+}
+
+/* line 144, ../scss/page/_profile.scss */
 .profile__comment__list__item__text {
   margin-top: 20px;
   font-size: 12px;
 }
 
-/* line 146, ../scss/page/_profile.scss */
+/* line 151, ../scss/page/_profile.scss */
+.profile__info {
+  padding-top: 15px;
+}
+
+/* line 156, ../scss/page/_profile.scss */
 .profile__info__item {
   width: 33.33%;
   float: left;
   text-align: center;
 }
 
-/* line 152, ../scss/page/_profile.scss */
+/* line 162, ../scss/page/_profile.scss */
 .profile__info__item__title {
   margin-bottom: 20px;
   font-size: 14px;
 }
 
-/* line 157, ../scss/page/_profile.scss */
+/* line 167, ../scss/page/_profile.scss */
 .rating {
   position: relative;
   width: 80%;
@@ -954,7 +965,7 @@ select option[default] {
   border-radius: 5px;
   border: 1px solid #666A6F;
 }
-/* line 167, ../scss/page/_profile.scss */
+/* line 177, ../scss/page/_profile.scss */
 .rating > span {
   position: absolute;
   top: 0;
@@ -963,7 +974,7 @@ select option[default] {
   background: #DC914A;
 }
 
-/* line 176, ../scss/page/_profile.scss */
+/* line 186, ../scss/page/_profile.scss */
 .profile__info__item__num {
   color: #DC914A;
   display: inline-block;

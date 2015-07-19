@@ -7,7 +7,7 @@
 }
 
 .profile__col-1 {
-    width: 180% * 100 / 898;
+    width: 220% * 100 / 898;
     float: left;
     padding: 20px 15% * 100 / 898;
 
@@ -17,7 +17,8 @@
 }
 
 .profile__col-2 {
-    width: 718% * 100 / 898;
+    width: 648% * 100 / 898;
+    margin-left: 3%;
     float: left;
 }
 
@@ -41,7 +42,8 @@
 
 .profile__filters {
     @extend .clearfix;
-    padding: 10px 50% * 100 / 898;
+    //padding: 10px 50% * 100 / 898;
+    padding: 10px 0;
     //border-bottom: 1px solid $c-grey;
 }
 
@@ -99,17 +101,22 @@
 
 
 .profile__comment {
-    padding: 10px 50% * 100 / 898;
+    //padding: 10px 50% * 100 / 898;
+    padding: 10px 0;
     clear: both;
 
 }
 .profile__comment__title {
-    padding: 0 38% * 100 / $widthPage 0 17% * 100 / $widthPage 5px;
+    //padding: 0 38% * 100 / $widthPage 0 17% * 100 / $widthPage 18px;
+    padding: 0 0 18px;
+    font-size: 21px;
 }
 
-.profile__comment__list__item{
+.profile__comment__list__item {
     padding: 10px;
     margin-bottom: 20px;
+    color: #48433D;
+    border: 1px solid #afaeae;
 }
 
 .profile__comment__list__item__avatar {
@@ -124,11 +131,13 @@
 
 .profile__comment__list__item__name {
     float: left;
-    font-size: 13px;
+    color: #7f7d7c;
+    font-size: 14px;
 }
 
 .profile__comment__list__item__date {
     float: right;
+    color: #969594;
     font-size: 14px;
 }
 
@@ -141,6 +150,7 @@
 
 .profile__info {
     @extend .clearfix;
+    padding-top: 15px;
 }
 
 .profile__info__item {
