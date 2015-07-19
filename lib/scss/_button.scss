@@ -45,6 +45,11 @@ $c-input: #AFAEAE;
         font-size: 16px;
     }
 
+    &--yellow {
+        color: #fff;
+        background: #DC914A;
+    }
+
     &--full {
         width: 100%;
         padding: 10px 0;
@@ -73,6 +78,10 @@ $c-input: #AFAEAE;
         border: 2px solid #fff;
     }
 
+    &--two {
+        width: 50%;
+        float: left;
+    }
 }
 
 
