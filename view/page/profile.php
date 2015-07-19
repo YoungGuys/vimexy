@@ -44,7 +44,7 @@
                     </li>
                     <li class="history__list__item">
                         <a href="#">
-                            <time class="history__list__item__date">07.02.15</time>
+                            <ti¡me class="history__list__item__date">07.02.15</time>
                             <p class="history__list__item__title">TEDx Kyiv волонтёр</p>
                         </a>
                     </li>

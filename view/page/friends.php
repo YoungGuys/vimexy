@@ -34,13 +34,13 @@
 
 
 
-    <div class="page__friend">
+    <ul class="page__friend">
 
-        <div class="page__friend__item">
-            <img class="page__friend__item__img" src="" alt="user-avatar"/>
+        <li class="page__friend__item">
+            <img class="page__friend__item__img" src="http://i.kinja-img.com/gawker-media/image/upload/flhfczsxt5metxltus25.jpg" alt="user-avatar"/>
             <p class="page__friend__item__name">Василь Григорович</p>
-        </div>
+        </li>
 
-    </div>
+    </ul>
 
 </section>

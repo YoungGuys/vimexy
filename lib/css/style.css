@@ -1261,16 +1261,29 @@ select option[default] {
 
 /* line 269, ../scss/page/_events.scss */
 .page__friend {
-  padding: 15px 1.74538%;
+  padding: 15px 1.02669%;
 }
 
 /* line 274, ../scss/page/_events.scss */
+.page__friend__item {
+  width: 17%;
+  margin: 0 1% 20px;
+  float: left;
+  text-align: center;
+}
+
+/* line 285, ../scss/page/_events.scss */
+.page__friend__item__name {
+  margin-top: 3px;
+}
+
+/* line 291, ../scss/page/_events.scss */
 .page__my_events {
   padding: 30px 0 1.74538%;
   font-size: 0;
 }
 
-/* line 281, ../scss/page/_events.scss */
+/* line 298, ../scss/page/_events.scss */
 .page__my_events__item {
   width: 26.11111%;
   margin: 0 3.5% 50px;
@@ -1278,16 +1291,16 @@ select option[default] {
   vertical-align: bottom;
   font-size: 14px;
 }
-/* line 289, ../scss/page/_events.scss */
+/* line 306, ../scss/page/_events.scss */
 .page__my_events__item.is-complete .page__my_events__item__title {
   background: #5D9DD3;
 }
-/* line 294, ../scss/page/_events.scss */
+/* line 311, ../scss/page/_events.scss */
 .page__my_events__item img {
   width: 100%;
 }
 
-/* line 299, ../scss/page/_events.scss */
+/* line 316, ../scss/page/_events.scss */
 .page__my_events__item__title {
   height: 36px;
   line-height: 36px;

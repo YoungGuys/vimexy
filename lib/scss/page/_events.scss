@@ -268,8 +268,25 @@
 
 .page__friend {
     @extend .clearfix;
-    padding: 15px 17% * 100 / $widthPage;
+    padding: 15px 10% * 100 / $widthPage;
 }
+
+    .page__friend__item {
+        width: 17%;
+        margin: 0 1% 20px;
+        float: left;
+        text-align: center;
+    }
+
+        .page__friend__item__img {
+
+        }
+
+        .page__friend__item__name {
+            margin-top: 3px;
+        }
+
+
 
 .page__my_events {
     @extend .clearfix;
