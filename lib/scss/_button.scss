@@ -4,17 +4,24 @@ $c-input: #AFAEAE;
     padding: 5px 10px;
     display: inline-block;
     color: #000;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
     background: none;
     border: none;
     //border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
+    font-weight: 300;
     @extend .animate;
 
     &:active,
+    &:hover,
     &:focus {
-        outline: none;
-        text-decoration: none;
+        outline: none !important;
+        text-decoration: none !important;
     }
 
     &--red {
@@ -48,6 +55,12 @@ $c-input: #AFAEAE;
     &--yellow {
         color: #fff;
         background: #DC914A;
+
+        &:hover {
+            color: #000;
+            background: #fff;
+            border: 1px solid #afaeae;
+        }
     }
 
     &--full {
@@ -59,12 +72,12 @@ $c-input: #AFAEAE;
     &-search {
         width: 100%;
         padding: 0;
-        height: 25px;
-        vertical-align: middle;
-        line-height: 25px;
+        //height: 25px;
+        height: 32px;
+        vertical-align: top;
+        line-height: 32px;
         background: #3E4649;
         font-size: 14px;
-        font-weight: 300;
     }
 
     &--black {
@@ -79,8 +92,17 @@ $c-input: #AFAEAE;
     }
 
     &--two {
-        width: 50%;
+        width: 50% !important;
         float: left;
+    }
+
+    &--border {
+        border: 1px solid #afaeae;
+
+        &:hover {
+            color: #fff;
+            background: #DC914A;
+        }
     }
 }
 

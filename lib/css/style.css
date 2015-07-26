@@ -70,7 +70,7 @@ html {
   line-height: 1.23077em;
 }
 
-/* line 19, ../scss/_base.scss */
+/* line 20, ../scss/_base.scss */
 html,
 body {
   min-width: 100%;
@@ -78,7 +78,7 @@ body {
   font-family: 'Open Sans', Verdana, Tahoma, Arial, sans-serif;
 }
 
-/* line 28, ../scss/_base.scss */
+/* line 29, ../scss/_base.scss */
 p {
   word-break: break-all;
   word-break: break-word;
@@ -88,22 +88,22 @@ p {
   hyphens: auto;
 }
 
-/* line 32, ../scss/_base.scss */
+/* line 33, ../scss/_base.scss */
 a {
   text-decoration: none;
-  color: #76baeb;
+  color: #5D9DD3;
 }
 /* line 4, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_hover-link.scss */
 a:hover, a:focus {
   text-decoration: underline;
 }
 
-/* line 37, ../scss/_base.scss */
+/* line 38, ../scss/_base.scss */
 img {
   max-width: 100%;
 }
 
-/* line 42, ../scss/_base.scss */
+/* line 43, ../scss/_base.scss */
 .clearfix:after, .row:after, .container:after, .header__login:after, .register__bg:after, .profile__filters:after, .profile__gallery__list:after, .profile__info:after, .circle__list:after, .page__events__item:after, .page__events__item__meta__adress:after, .event__header:after, .event__date:after, .page__friend:after, .page__my_events:after {
   content: ' ';
   width: 0;
@@ -115,7 +115,7 @@ img {
   clear: both;
 }
 
-/* line 54, ../scss/_base.scss */
+/* line 55, ../scss/_base.scss */
 .animate, .btn, .skills__item__label, .modal_bg {
   -webkit-transition: all .5s ease;
   -moz-transition: all .5s ease;
@@ -296,35 +296,39 @@ i {
   padding: 5px 10px;
   display: inline-block;
   color: #000;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   background: none;
   border: none;
   cursor: pointer;
   text-decoration: none;
-}
-/* line 14, ../scss/_button.scss */
-.btn:active, .btn:focus {
-  outline: none;
-  text-decoration: none;
+  font-weight: 300;
 }
 /* line 20, ../scss/_button.scss */
+.btn:active, .btn:hover, .btn:focus {
+  outline: none !important;
+  text-decoration: none !important;
+}
+/* line 27, ../scss/_button.scss */
 .btn--red {
   color: #fff;
   background: #EE7565;
 }
-/* line 24, ../scss/_button.scss */
+/* line 31, ../scss/_button.scss */
 .btn--red:hover {
   background: #e94c37;
 }
-/* line 30, ../scss/_button.scss */
+/* line 37, ../scss/_button.scss */
 .btn--blue {
   color: #fff;
-  background: #76baeb;
+  background: #5D9DD3;
 }
-/* line 34, ../scss/_button.scss */
+/* line 41, ../scss/_button.scss */
 .btn--blue:hover {
-  background: #3398e1;
+  background: #3177b3;
 }
-/* line 39, ../scss/_button.scss */
+/* line 46, ../scss/_button.scss */
 .btn--big {
   width: 180px;
   height: 32px;
@@ -333,46 +337,60 @@ i {
   text-align: center;
   font-size: 16px;
 }
-/* line 48, ../scss/_button.scss */
+/* line 55, ../scss/_button.scss */
 .btn--yellow {
   color: #fff;
   background: #DC914A;
 }
-/* line 53, ../scss/_button.scss */
+/* line 59, ../scss/_button.scss */
+.btn--yellow:hover {
+  color: #000;
+  background: #fff;
+  border: 1px solid #afaeae;
+}
+/* line 66, ../scss/_button.scss */
 .btn--full {
   width: 100%;
   padding: 10px 0;
   text-align: center;
 }
-/* line 59, ../scss/_button.scss */
+/* line 72, ../scss/_button.scss */
 .btn-search {
   width: 100%;
   padding: 0;
-  height: 25px;
-  vertical-align: middle;
-  line-height: 25px;
+  height: 32px;
+  vertical-align: top;
+  line-height: 32px;
   background: #3E4649;
   font-size: 14px;
-  font-weight: 300;
 }
-/* line 70, ../scss/_button.scss */
+/* line 83, ../scss/_button.scss */
 .btn--black {
   background: #3E4649;
 }
-/* line 74, ../scss/_button.scss */
+/* line 87, ../scss/_button.scss */
 .btn--transp {
   padding: 5px 20px;
   font-size: 16px;
   background: transparent;
   border: 2px solid #fff;
 }
-/* line 81, ../scss/_button.scss */
+/* line 94, ../scss/_button.scss */
 .btn--two {
-  width: 50%;
+  width: 50% !important;
   float: left;
 }
+/* line 99, ../scss/_button.scss */
+.btn--border {
+  border: 1px solid #afaeae;
+}
+/* line 102, ../scss/_button.scss */
+.btn--border:hover {
+  color: #fff;
+  background: #DC914A;
+}
 
-/* line 91, ../scss/_button.scss */
+/* line 113, ../scss/_button.scss */
 .g-maps {
   height: 500px;
 }
@@ -751,7 +769,7 @@ option {
 /* line 158, ../scss/page/_register.scss */
 .btn--blue--regist {
   margin: 1% auto;
-  background-color: #76baeb !important;
+  background-color: #5D9DD3 !important;
   color: #fff;
   padding: 5px;
 }
@@ -1075,84 +1093,92 @@ select option[default] {
 .page__filter {
   height: 35px;
   line-height: 35px;
-  padding: 0 3.90144% 0 1.74538%;
+  padding: 5px 3.90144% 5px 1.74538%;
 }
 
 /* line 9, ../scss/page/_events.scss */
 .page__filter__item {
   width: 10.26694%;
   display: inline-block;
+  vertical-align: top;
   margin-right: 3.08008%;
 }
-
 /* line 15, ../scss/page/_events.scss */
-.page__filter__item__select {
-  width: 100%;
-  height: 25px;
-  line-height: 25px;
-  border: 1px solid #AFAEAE;
-  border-radius: 0;
+.page__filter__item--big {
+  width: 25.66735%;
 }
-
-/* line 23, ../scss/page/_events.scss */
+/* line 19, ../scss/page/_events.scss */
 .page__filter__item--search {
   width: 13.86037%;
   float: right;
 }
 
-/* line 29, ../scss/page/_events.scss */
+/* line 25, ../scss/page/_events.scss */
+.page__filter__item__select {
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  border: 1px solid #AFAEAE;
+  border-radius: 0;
+}
+/* line 32, ../scss/page/_events.scss */
+.page__filter__item__select:nth-of-type(2) {
+  margin: 0 -10px 0 10px;
+}
+
+/* line 39, ../scss/page/_events.scss */
 .page__events__item {
   position: relative;
   padding: 15px 3.90144% 15px 1.74538%;
   border-bottom: 1px solid #afaeae;
 }
-/* line 36, ../scss/page/_events.scss */
+/* line 46, ../scss/page/_events.scss */
 .page__events__item:last-child {
   border-bottom: 0;
 }
 
-/* line 41, ../scss/page/_events.scss */
+/* line 51, ../scss/page/_events.scss */
 .page__events__item__pic {
   width: 25.61247%;
   float: left;
   margin-right: 2.22717%;
 }
 
-/* line 47, ../scss/page/_events.scss */
+/* line 57, ../scss/page/_events.scss */
 .page__events__item__pic__img {
   width: 100%;
 }
 
-/* line 51, ../scss/page/_events.scss */
+/* line 62, ../scss/page/_events.scss */
 .page__events__item__info {
   width: 47.88419%;
   padding-bottom: 30px;
   float: left;
 }
 
-/* line 57, ../scss/page/_events.scss */
+/* line 68, ../scss/page/_events.scss */
 .page__events__item__info__title {
   margin-bottom: 10px;
   font-size: 18px;
 }
-/* line 61, ../scss/page/_events.scss */
+/* line 72, ../scss/page/_events.scss */
 .page__events__item__info__title a {
   color: #3E4649;
 }
 
-/* line 66, ../scss/page/_events.scss */
+/* line 77, ../scss/page/_events.scss */
 .page__events__item__info__text {
   margin-bottom: 12px;
   color: #969594;
 }
 
-/* line 75, ../scss/page/_events.scss */
+/* line 86, ../scss/page/_events.scss */
 .page__events__item__info__filter__title {
   margin: 35px 0 10px;
   font-size: 20px;
 }
 
-/* line 80, ../scss/page/_events.scss */
+/* line 91, ../scss/page/_events.scss */
 .page__events__item__info__filter__item {
   width: 55px;
   height: 55px;
@@ -1162,7 +1188,7 @@ select option[default] {
   border-radius: 100%;
 }
 
-/* line 89, ../scss/page/_events.scss */
+/* line 100, ../scss/page/_events.scss */
 .page__events__item__info__organizator {
   position: absolute;
   bottom: 20px;
@@ -1171,64 +1197,78 @@ select option[default] {
   font-size: 14px;
 }
 
-/* line 97, ../scss/page/_events.scss */
+/* line 108, ../scss/page/_events.scss */
 .page__events__item__info__organizator__link {
   display: inline;
 }
 
-/* line 101, ../scss/page/_events.scss */
+/* line 113, ../scss/page/_events.scss */
 .page__events__item__meta {
   width: 23.3853%;
   float: right;
   line-height: 15px;
   font-size: 13px;
 }
-/* line 107, ../scss/page/_events.scss */
+/* line 119, ../scss/page/_events.scss */
 .page__events__item__meta i {
   width: 30px;
 }
 
-/* line 116, ../scss/page/_events.scss */
+/* line 128, ../scss/page/_events.scss */
+.page__events__item__meta__btn {
+  font-size: 16px;
+}
+
+/* line 132, ../scss/page/_events.scss */
 .page__events__item__meta__adress {
   margin: 10px 0;
 }
-/* line 120, ../scss/page/_events.scss */
+/* line 136, ../scss/page/_events.scss */
 .page__events__item__meta__adress i {
   float: left;
 }
-/* line 123, ../scss/page/_events.scss */
+/* line 139, ../scss/page/_events.scss */
 .page__events__item__meta__adress span {
   overflow: hidden;
   line-height: 1.2;
 }
 
-/* line 129, ../scss/page/_events.scss */
+/* line 145, ../scss/page/_events.scss */
 .page__events__item__meta__user {
   margin-bottom: 10px;
 }
 
-/* line 136, ../scss/page/_events.scss */
+/* line 149, ../scss/page/_events.scss */
+.c-grey {
+  color: #B2B5BE;
+}
+/* line 152, ../scss/page/_events.scss */
+.c-grey a {
+  color: #969594;
+}
+
+/* line 158, ../scss/page/_events.scss */
 .event__header {
   margin-bottom: 15px;
   padding: 0 0 0 1.74538%;
   line-height: 35px;
 }
 
-/* line 144, ../scss/page/_events.scss */
+/* line 166, ../scss/page/_events.scss */
 .event__header__title {
   float: left;
   font-size: 22px;
   font-weight: 600;
 }
 
-/* line 150, ../scss/page/_events.scss */
+/* line 172, ../scss/page/_events.scss */
 .event__header__users {
   float: right;
   color: #DC914A;
   font-size: 24px;
 }
 
-/* line 156, ../scss/page/_events.scss */
+/* line 178, ../scss/page/_events.scss */
 .event__col-1 {
   width: 71.86858%;
   padding: 0 3.90144% 0 1.74538%;
@@ -1236,19 +1276,19 @@ select option[default] {
   float: left;
 }
 
-/* line 163, ../scss/page/_events.scss */
+/* line 185, ../scss/page/_events.scss */
 .event__col-2 {
   width: 26.69405%;
   float: right;
 }
 
-/* line 168, ../scss/page/_events.scss */
+/* line 190, ../scss/page/_events.scss */
 .event__pic {
   width: 100%;
   margin-bottom: 20px;
 }
 
-/* line 173, ../scss/page/_events.scss */
+/* line 195, ../scss/page/_events.scss */
 .event__btn_add {
   float: right;
   color: #fff;
@@ -1256,31 +1296,31 @@ select option[default] {
   font-size: 14px;
 }
 
-/* line 181, ../scss/page/_events.scss */
+/* line 203, ../scss/page/_events.scss */
 .event__descr__title {
   margin-bottom: 10px;
   font-size: 20px;
 }
 
-/* line 185, ../scss/page/_events.scss */
+/* line 207, ../scss/page/_events.scss */
 .event__descr__text {
   line-height: 20px;
   font-size: 14px;
 }
 
-/* line 191, ../scss/page/_events.scss */
+/* line 213, ../scss/page/_events.scss */
 .event__geo {
   position: relative;
   margin-bottom: 25px;
 }
 
-/* line 196, ../scss/page/_events.scss */
+/* line 218, ../scss/page/_events.scss */
 .event__geo__map {
   margin-bottom: 5px;
   height: 235px;
 }
 
-/* line 201, ../scss/page/_events.scss */
+/* line 223, ../scss/page/_events.scss */
 .event__geo__btn {
   position: absolute;
   bottom: 0;
@@ -1288,72 +1328,72 @@ select option[default] {
   color: #fff;
 }
 
-/* line 211, ../scss/page/_events.scss */
+/* line 233, ../scss/page/_events.scss */
 .event__date {
   margin-bottom: 20px;
 }
 
-/* line 216, ../scss/page/_events.scss */
+/* line 238, ../scss/page/_events.scss */
 .event__contact__img {
   width: 135px;
   margin-right: 5px;
 }
 
-/* line 223, ../scss/page/_events.scss */
+/* line 245, ../scss/page/_events.scss */
 .event__date {
   margin-bottom: 10px;
 }
 
-/* line 228, ../scss/page/_events.scss */
+/* line 250, ../scss/page/_events.scss */
 .event__date__title {
   display: block;
   margin-bottom: 10px;
   font-size: 20px;
 }
 
-/* line 234, ../scss/page/_events.scss */
+/* line 256, ../scss/page/_events.scss */
 .event__date__calendar {
   margin-right: 10px;
   float: left;
 }
 
-/* line 239, ../scss/page/_events.scss */
+/* line 261, ../scss/page/_events.scss */
 .event__date__info {
   overflow: hidden;
 }
-/* line 242, ../scss/page/_events.scss */
+/* line 264, ../scss/page/_events.scss */
 .event__date__info span {
   color: #dc914a;
 }
 
-/* line 250, ../scss/page/_events.scss */
+/* line 272, ../scss/page/_events.scss */
 .event__contact {
   margin-top: 25px;
 }
 
-/* line 253, ../scss/page/_events.scss */
+/* line 275, ../scss/page/_events.scss */
 .event__contact__title {
   margin-bottom: 10px;
   font-size: 20px;
 }
 
-/* line 258, ../scss/page/_events.scss */
+/* line 280, ../scss/page/_events.scss */
 .event__contact__img {
   margin-right: 10px;
   float: left;
 }
 
-/* line 263, ../scss/page/_events.scss */
+/* line 285, ../scss/page/_events.scss */
 .event__contact__info {
   overflow: hidden;
 }
 
-/* line 271, ../scss/page/_events.scss */
+/* line 293, ../scss/page/_events.scss */
 .page__friend {
   padding: 15px 1.02669%;
 }
 
-/* line 276, ../scss/page/_events.scss */
+/* line 298, ../scss/page/_events.scss */
 .page__friend__item {
   width: 17%;
   margin: 0 1% 20px;
@@ -1361,18 +1401,18 @@ select option[default] {
   text-align: center;
 }
 
-/* line 287, ../scss/page/_events.scss */
+/* line 309, ../scss/page/_events.scss */
 .page__friend__item__name {
   margin-top: 3px;
 }
 
-/* line 293, ../scss/page/_events.scss */
+/* line 315, ../scss/page/_events.scss */
 .page__my_events {
   padding: 30px 0 1.74538%;
   font-size: 0;
 }
 
-/* line 300, ../scss/page/_events.scss */
+/* line 322, ../scss/page/_events.scss */
 .page__my_events__item {
   width: 26.11111%;
   margin: 0 3.5% 50px;
@@ -1380,16 +1420,16 @@ select option[default] {
   vertical-align: bottom;
   font-size: 14px;
 }
-/* line 308, ../scss/page/_events.scss */
+/* line 330, ../scss/page/_events.scss */
 .page__my_events__item.is-complete .page__my_events__item__title {
   background: #5D9DD3;
 }
-/* line 313, ../scss/page/_events.scss */
+/* line 335, ../scss/page/_events.scss */
 .page__my_events__item img {
   width: 100%;
 }
 
-/* line 318, ../scss/page/_events.scss */
+/* line 340, ../scss/page/_events.scss */
 .page__my_events__item__title {
   height: 36px;
   line-height: 36px;
